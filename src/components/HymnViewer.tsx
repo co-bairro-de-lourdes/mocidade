@@ -45,19 +45,16 @@ export function HymnViewer({ hymn, onBack }: HymnViewerProps) {
         </div>
       </div>
 
-      <div className="rounded-lg border bg-hymn-card text-card-foreground shadow-sm border-border/50">
-        <div className="flex flex-col space-y-1.5 p-6 text-center pb-6">
-          <div className="flex items-center justify-between gap-3 mb-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-lg">
-              {hymn.numero}
-            </div>
-            <h3 className="text-xl font-semibold leading-none tracking-tight text-primary">{hymn.titulo}</h3>
-            <div/>
+      <div className="rounded-lg border bg-hymn-card text-card-foreground shadow-sm border-border/50 py-6">
+        <div className="flex items-center justify-center gap-3 mb-6 relative right-5">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-lg">
+            {hymn.numero}
           </div>
+          <h3 className="text-xl font-semibold leading-none tracking-tight text-primary">{hymn.titulo}</h3>
         </div>
-        
-        <div className="p-6 pt-0 hymn-content text-center" style={{ fontSize: `${fontSize}px` }}>
-          <div className="space-y-6 max-w-2xl mx-auto">
+
+        <div className="hymn-content text-center" style={{ fontSize: `${fontSize}px` }}>
+          <div className="flex flex-col space-y-6 max-w-2xl mx-auto px-6">
             {hymn.estrofes.map((estrofe, index) => (
               <div key={index} className="verse">
                 <div className="text-hymn-text leading-relaxed whitespace-pre-line">
