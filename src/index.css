@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system for spiritual hymns app - elegant and serene */
+
+@layer base {
+  :root {
+    /* Light theme - Clean and spiritual */
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    /* Primary - Deep spiritual blue */
+    --primary: 225 70% 20%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 225 60% 35%;
+    --primary-lighter: 225 45% 88%;
+
+    /* Secondary - Warm accent */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 220 13% 18%;
+
+    /* Muted tones for subtle elements */
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent - Soft purple for highlights */
+    --accent: 240 20% 94%;
+    --accent-foreground: 225 70% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 225 70% 20%;
+
+    --radius: 0.75rem;
+
+    /* Custom spiritual theme colors */
+    --hymn-bg: 225 45% 98%;
+    --hymn-card: 0 0% 100%;
+    --hymn-shadow: 225 25% 85%;
+    --search-focus: 225 70% 20%;
+    --verse-text: 220 15% 25%;
+
+    /* Font size controls */
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.875rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme - Peaceful night reading */
+    --background: 220 25% 6%;
+    --foreground: 210 40% 92%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 92%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 40% 92%;
+
+    /* Primary - Gentle blue in dark */
+    --primary: 225 60% 65%;
+    --primary-foreground: 220 25% 6%;
+    --primary-light: 225 50% 75%;
+    --primary-lighter: 225 30% 15%;
+
+    /* Secondary in dark */
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 210 40% 92%;
+
+    /* Muted in dark */
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 15% 65%;
+
+    /* Accent in dark */
+    --accent: 240 15% 12%;
+    --accent-foreground: 225 60% 65%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 40% 92%;
+
+    --border: 220 15% 15%;
+    --input: 220 15% 15%;
+    --ring: 225 60% 65%;
+
+    /* Dark theme specific colors */
+    --hymn-bg: 220 20% 8%;
+    --hymn-card: 220 15% 10%;
+    --hymn-shadow: 220 25% 5%;
+    --search-focus: 225 60% 65%;
+    --verse-text: 210 25% 85%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans transition-colors duration-300;
+  }
+
+  .hymn-content {
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .search-highlight {
+    @apply bg-primary/20 px-1 rounded;
+  }
+
+  .verse-line {
+    @apply leading-relaxed mb-2;
+  }
+
+  .hymn-card-hover {
+    @apply transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .theme-transition {
+    @apply transition-colors duration-300;
+  }
+}
