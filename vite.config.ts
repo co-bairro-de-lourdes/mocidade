@@ -29,17 +29,17 @@ export default defineConfig(({ mode }) => ({
         theme_color: "#ffffff",
         icons: [
           {
-            src: "icone-192x192.png", // <== don't add slash, for testing
+            src: "web-app-manifest-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/icone-512x512.png", // <== don't remove slash, for testing
+            src: "/web-app-manifest-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "icone-512x512.png", // <== don't add slash, for testing
+            src: "web-app-manifest-512x512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "any maskable",
