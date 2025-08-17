@@ -14,7 +14,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 1,
     "numero": 1,
-    "titulo": "Estamos Muito Alegres",
+    "titulo": "ESTAMOS MUITO ALEGRES",
     "estrofes": [
       [
         { "texto": "Estamos muito alegres, Jesus está aqui", "italico": false },
@@ -30,7 +30,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 2,
     "numero": 2,
-    "titulo": "Vem Louvar",
+    "titulo": "VEM LOUVAR",
     "estrofes": [
       [
         { "texto": "Hoje é tempo de louvar a Deus", "italico": false },
@@ -52,7 +52,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 3,
     "numero": 3,
-    "titulo": "Jesus Cristo Satisfaz",
+    "titulo": "JESUS CRISTO SATISFAZ",
     "estrofes": [
       [
         { "texto": "Oh! Jesus Cristo satisfaz", "italico": false },
@@ -74,7 +74,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 4,
     "numero": 4,
-    "titulo": "A Tua Presença",
+    "titulo": "A TUA PRESENÇA",
     "estrofes": [
       [
         { "texto": "Senhor, eu quero sentir", "italico": true },
@@ -93,7 +93,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 5,
     "numero": 5,
-    "titulo": "Numa Só Voz",
+    "titulo": "NUMA SÓ VOZ",
     "estrofes": [
       [
         { "texto": "Um sorriso se abrindo no olhar", "italico": false },
@@ -116,7 +116,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 6,
     "numero": 6,
-    "titulo": "Cantando Alegre",
+    "titulo": "CANTANDO ALEGRE",
     "estrofes": [
       [
         { "texto": "Estou cantando alegre", "italico": false },
@@ -145,7 +145,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 7,
     "numero": 7,
-    "titulo": "Satisfação",
+    "titulo": "SATISFAÇÃO",
     "estrofes": [
       [
         { "texto": "Satisfação é ter a Cristo!", "italico": false },
@@ -175,7 +175,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 8,
     "numero": 8,
-    "titulo": "Deus É Pai",
+    "titulo": "DEUS É PAI",
     "estrofes": [
       [
         { "texto": "Deus é Pai! Sim, Deus é Pai", "italico": true },
@@ -200,7 +200,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 9,
     "numero": 9,
-    "titulo": "Esta Paz",
+    "titulo": "ESTA PAZ",
     "estrofes": [
       [
         { "texto": "Esta paz que sinto em minha alma", "italico": false },
@@ -230,7 +230,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 10,
     "numero": 10,
-    "titulo": "Sou Feliz",
+    "titulo": "SOU FELIZ",
     "estrofes": [
       [
         { "texto": "Sou feliz, mui feliz!", "italico": false },
@@ -252,7 +252,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 11,
     "numero": 11,
-    "titulo": "Deus Fiel",
+    "titulo": "DEUS FIEL",
     "estrofes": [
       [
         { "texto": "Deus fiel, Deus fiel!", "italico": false },
@@ -265,7 +265,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 12,
     "numero": 12,
-    "titulo": "Grandes Coisas",
+    "titulo": "GRANDES COISAS",
     "estrofes": [
       [
         { "texto": "Grandes coisas fez o Senhor por nós! (4x)", "italico": true },
@@ -286,7 +286,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 13,
     "numero": 13,
-    "titulo": "Meu Coração Transborda",
+    "titulo": "MEU CORAÇÃO TRANSBORDA",
     "estrofes": [
       [
         { "texto": "Meu coração transborda de amor", "italico": false },
@@ -304,7 +304,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 14,
     "numero": 14,
-    "titulo": "Tudo Coopera",
+    "titulo": "TUDO COOPERA",
     "estrofes": [
       [
         { "texto": "Tudo coopera para o bem", "italico": true },
@@ -328,7 +328,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 15,
     "numero": 15,
-    "titulo": "Te Agradeço",
+    "titulo": "TE AGRADEÇO",
     "estrofes": [
       [
         { "texto": "Por tudo o que tens feito,", "italico": false },
@@ -353,7 +353,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 16,
     "numero": 16,
-    "titulo": "Rendei Graças",
+    "titulo": "RENDEI GRAÇAS",
     "estrofes": [
       [
         { "texto": "Rendei graças ao Senhor,", "italico": false },
@@ -373,7 +373,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 17,
     "numero": 17,
-    "titulo": "Exaltado",
+    "titulo": "EXALTADO",
     "estrofes": [
       [
         { "texto": "Exaltado, exaltado", "italico": true },
@@ -393,7 +393,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 18,
     "numero": 18,
-    "titulo": "Digno De Glória",
+    "titulo": "DIGNO DE GLÓRIA",
     "estrofes": [
       [
         { "texto": "Digno de glória e honra", "italico": false },
@@ -415,7 +415,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 19,
     "numero": 19,
-    "titulo": "Minha Força",
+    "titulo": "MINHA FORÇA",
     "estrofes": [
       [
         { "texto": "O Senhor é a minha força", "italico": false },
@@ -439,7 +439,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 20,
     "numero": 20,
-    "titulo": "Ó, Louvai A Deus",
+    "titulo": "Ó, LOUVAI A DEUS",
     "estrofes": [
       [
         { "texto": "Ó, louvai a Deus comigo", "italico": false },
@@ -462,7 +462,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 21,
     "numero": 21,
-    "titulo": "Tu És Soberano",
+    "titulo": "TU ÉS SOBERANO",
     "estrofes": [
       [
         { "texto": "Tu és Soberano sobre a terra,", "italico": false },
@@ -483,7 +483,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 22,
     "numero": 22,
-    "titulo": "Quão Formoso És",
+    "titulo": "QUÃO FORMOSO ÉS",
     "estrofes": [
       [
         { "texto": "Quão Formoso és, Rei do universo", "italico": true },
@@ -504,7 +504,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 23,
     "numero": 23,
-    "titulo": "Me Amaste",
+    "titulo": "ME AMASTE",
     "estrofes": [
       [
         { "texto": "Sendo eu pecador, Tu me amaste", "italico": false },
@@ -529,7 +529,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 24,
     "numero": 24,
-    "titulo": "Nova Vida",
+    "titulo": "NOVA VIDA",
     "estrofes": [
       [
         { "texto": "Romperam-se as cadeias,", "italico": false },
@@ -568,7 +568,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 25,
     "numero": 25,
-    "titulo": "Grande Fardo",
+    "titulo": "GRANDE FARDO",
     "estrofes": [
       [
         { "texto": "Grande fardo de pecados meus", "italico": false },
@@ -587,7 +587,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 26,
     "numero": 26,
-    "titulo": "Dono Do Meu Coração",
+    "titulo": "DONO DO MEU CORAÇÃO",
     "estrofes": [
       [
         { "texto": "Rei do universo, Te dou meu louvor", "italico": false },
@@ -623,7 +623,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 27,
     "numero": 27,
-    "titulo": "Deus, Cria Em Mim",
+    "titulo": "DEUS, CRIA EM MIM",
     "estrofes": [
       [
         { "texto": "Deus, cria em mim um coração puro e bom", "italico": false },
@@ -648,7 +648,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 28,
     "numero": 28,
-    "titulo": "Renova-Me",
+    "titulo": "RENOVA-ME",
     "estrofes": [
       [
         { "texto": "Renova-me, Senhor Jesus", "italico": false },
@@ -667,7 +667,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 29,
     "numero": 29,
-    "titulo": "Vaso Novo",
+    "titulo": "VASO NOVO",
     "estrofes": [
       [
         { "texto": "Eu quero ser, Senhor amado,", "italico": false },
@@ -687,7 +687,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 30,
     "numero": 30,
-    "titulo": "Fala Comigo",
+    "titulo": "FALA COMIGO",
     "estrofes": [
       [
         { "texto": "Estou pronto, Senhor, para ouvir-Te falar", "italico": false },
@@ -709,7 +709,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 31,
     "numero": 31,
-    "titulo": "Pouco A Pouco",
+    "titulo": "POUCO A POUCO",
     "estrofes": [
       [
         { "texto": "Pouco a pouco, cada dia", "italico": false },
@@ -730,7 +730,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 32,
     "numero": 32,
-    "titulo": "Sonda-Me, Ó Deus",
+    "titulo": "SONDA-ME, Ó DEUS",
     "estrofes": [
       [
         { "texto": "Sonda-me, ó Deus, pois vês meu coração;", "italico": false },
@@ -761,7 +761,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 33,
     "numero": 33,
-    "titulo": "Se Confessarmos",
+    "titulo": "SE CONFESSARMOS",
     "estrofes": [[
       { "texto": "Se confessarmos os nossos pecados,", "italico": false },
       { "texto": "Ele é fiel e justo", "italico": false },
@@ -772,7 +772,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 34,
     "numero": 34,
-    "titulo": "Buscai Primeiro",
+    "titulo": "BUSCAI PRIMEIRO",
     "estrofes": [
       [
         { "texto": "Buscai primeiro o reino de Deus", "italico": false },
@@ -801,7 +801,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 35,
     "numero": 35,
-    "titulo": "Em Louvor A Ti, Ó Senhor",
+    "titulo": "EM LOUVOR A TI, Ó SENHOR",
     "estrofes": [
       [
         { "texto": "Que as palavras da minha boca", "italico": false },
@@ -821,7 +821,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 36,
     "numero": 36,
-    "titulo": "Rende O Coração",
+    "titulo": "RENDE O CORAÇÃO",
     "estrofes": [
       [
         { "texto": "Rende o coração a Jesus Cristo já", "italico": false },
@@ -834,7 +834,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 37,
     "numero": 37,
-    "titulo": "Lembra-Te Do Teu Criador",
+    "titulo": "LEMBRA-TE DO TEU CRIADOR",
     "estrofes": [
       [
         { "texto": "Lembra-te do Teu Criador! (3x)", "italico": true },
@@ -863,7 +863,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 38,
     "numero": 38,
-    "titulo": "Jesus Virá",
+    "titulo": "JESUS VIRÁ",
     "estrofes": [
       [
         { "texto": "Um lindo dia almejo eu encontrar", "italico": false },
@@ -891,7 +891,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 39,
     "numero": 39,
-    "titulo": "Virão Te Louvar",
+    "titulo": "VIRÃO TE LOUVAR",
     "estrofes": [
       [
         { "texto": "De todas as tribos, povos e raças,", "italico": false },
@@ -922,7 +922,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 40,
     "numero": 40,
-    "titulo": "Para Que O Mundo Creia",
+    "titulo": "PARA QUE O MUNDO CREIA",
     "estrofes": [
       [
         { "texto": "Ide e pregai em Nome do Senhor Jesus", "italico": false },
@@ -952,7 +952,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 41,
     "numero": 41,
-    "titulo": "Deus Amou O Mundo",
+    "titulo": "DEUS AMOU O MUNDO",
     "estrofes": [
       [
         { "texto": "Deus amou o mundo de tal maneira", "italico": true },
@@ -975,7 +975,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 42,
     "numero": 42,
-    "titulo": "Compromisso",
+    "titulo": "COMPROMISSO",
     "estrofes": [
       [
         { "texto": "É hora de falar, é tempo de pregar,", "italico": false },
@@ -998,7 +998,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 43,
     "numero": 43,
-    "titulo": "Ide E Pregai",
+    "titulo": "IDE E PREGAI",
     "estrofes": [
       [
         { "texto": "Ide e pregai, ide com fé!", "italico": false },
@@ -1017,7 +1017,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 44,
     "numero": 44,
-    "titulo": "Quem Quer Ajudar",
+    "titulo": "QUEM QUER AJUDAR",
     "estrofes": [
       [
         { "texto": "É grande a seara", "italico": true },
@@ -1051,7 +1051,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 45,
     "numero": 45,
-    "titulo": "Teu Povo",
+    "titulo": "TEU POVO",
     "estrofes": [
       [
         { "texto": "É o Teu povo aqui presente,", "italico": false },
@@ -1073,7 +1073,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 46,
     "numero": 46,
-    "titulo": "Só Em Jesus",
+    "titulo": "SÓ EM JESUS",
     "estrofes": [
       [
         { "texto": "Só em Jesus, meu Redentor,", "italico": false },
@@ -1110,7 +1110,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 47,
     "numero": 47,
-    "titulo": "Ao Único",
+    "titulo": "AO ÚNICO",
     "estrofes": [
       [
         { "texto": "Ao Único que é digno de receber", "italico": false },
@@ -1129,7 +1129,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 48,
     "numero": 48,
-    "titulo": "Conquistou Meu Coração",
+    "titulo": "CONQUISTOU MEU CORAÇÃO",
     "estrofes": [
       [
         { "texto": "Tu que estás entronizado", "italico": false },
@@ -1164,7 +1164,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 49,
     "numero": 49,
-    "titulo": "Tua Visão",
+    "titulo": "TUA VISÃO",
     "estrofes": [
       [
         { "texto": "Tua visão pra minha vida", "italico": false },
@@ -1187,7 +1187,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 50,
     "numero": 50,
-    "titulo": "Nada Igual",
+    "titulo": "NADA IGUAL",
     "estrofes": [
       [
         { "texto": "Porque desde a antiguidade,", "italico": false },
@@ -1218,7 +1218,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 51,
     "numero": 51,
-    "titulo": "Glória Pra Sempre",
+    "titulo": "GLÓRIA PRA SEMPRE",
     "estrofes": [
       [
         { "texto": "Glória pra sempre", "italico": false },
@@ -1245,7 +1245,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 52,
     "numero": 52,
-    "titulo": "Dez Mil Razões",
+    "titulo": "DEZ MIL RAZÕES",
     "estrofes": [
       [
         { "texto": "Minha alma canta a Ti!", "italico": true },
@@ -1277,7 +1277,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 53,
     "numero": 53,
-    "titulo": "Razão De Viver",
+    "titulo": "RAZÃO DE VIVER",
     "estrofes": [
       [
         { "texto": "Muitos há que põem suas vidas em coisas vãs", "italico": false },
@@ -1304,7 +1304,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 54,
     "numero": 54,
-    "titulo": "Dou Graças De Coração",
+    "titulo": "DOU GRAÇAS DE CORAÇÃO",
     "estrofes": [
       [
         { "texto": "Dou graças de coração,", "italico": true },
@@ -1326,7 +1326,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 55,
     "numero": 55,
-    "titulo": "Andam Procurando",
+    "titulo": "ANDAM PROCURANDO",
     "estrofes": [
       [
         { "texto": "Andam procurando a razão de viver", "italico": false },
@@ -1353,7 +1353,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 56,
     "numero": 56,
-    "titulo": "Eu Te Louvarei",
+    "titulo": "EU TE LOUVAREI",
     "estrofes": [
       [
         { "texto": "Eu Te louvarei, Senhor,", "italico": false },
@@ -1370,7 +1370,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 57,
     "numero": 57,
-    "titulo": "Vamos Adorar",
+    "titulo": "VAMOS ADORAR",
     "estrofes": [
       [
         { "texto": "Vamos adorar a Deus! (2x)", "italico": false },
@@ -1390,7 +1390,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 58,
     "numero": 58,
-    "titulo": "Os Que Esperam No Senhor",
+    "titulo": "OS QUE ESPERAM NO SENHOR",
     "estrofes": [
       [
         { "texto": "Os que esperam no Senhor", "italico": true },
@@ -1415,7 +1415,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 59,
     "numero": 59,
-    "titulo": "Então Se Verá",
+    "titulo": "ENTÃO SE VERÁ",
     "estrofes": [
       [
         { "texto": "Então se verá o Filho do homem", "italico": true },
@@ -1433,7 +1433,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 60,
     "numero": 60,
-    "titulo": "Alto Preço",
+    "titulo": "ALTO PREÇO",
     "estrofes": [
       [
         { "texto": "Eu sei que foi pago um alto preço", "italico": false },
@@ -1465,7 +1465,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 61,
     "numero": 61,
-    "titulo": "O Meu Louvor É Fruto",
+    "titulo": "O MEU LOUVOR É FRUTO",
     "estrofes": [
       [
         { "texto": "O meu louvor é fruto", "italico": true },
@@ -1494,7 +1494,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 62,
     "numero": 62,
-    "titulo": "Quem Nos Separará",
+    "titulo": "QUEM NOS SEPARARÁ",
     "estrofes": [
       [
         { "texto": "Quem nos separará do amor de Cristo?", "italico": false },
@@ -1525,7 +1525,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 63,
     "numero": 63,
-    "titulo": "Porque Ele Vive",
+    "titulo": "PORQUE ELE VIVE",
     "estrofes": [
       [
         { "texto": "Deus enviou seu Filho amado", "italico": false },
@@ -1552,7 +1552,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 64,
     "numero": 64,
-    "titulo": "Rei Das Nações",
+    "titulo": "REI DAS NAÇÕES",
     "estrofes": [
       [
         { "texto": "Grandes são as Tuas obras,", "italico": false },
@@ -1580,7 +1580,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 65,
     "numero": 65,
-    "titulo": "Tudo Ele É Pra Mim",
+    "titulo": "TUDO ELE É PRA MIM",
     "estrofes": [
       [
         { "texto": "Nas estrelas vejo a Sua mão", "italico": false },
@@ -1613,7 +1613,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 66,
     "numero": 66,
-    "titulo": "Celebrai Com Júbilo",
+    "titulo": "CELEBRAI COM JÚBILO",
     "estrofes": [
       [
         { "texto": "Celebrai, com júbilo, ao Senhor", "italico": false },
@@ -1631,7 +1631,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 67,
     "numero": 67,
-    "titulo": "Vitória Em Cristo",
+    "titulo": "VITÓRIA EM CRISTO",
       "estrofes": [
         [
           { "texto": "Ouvi contar a história", "italico": false },
@@ -1667,7 +1667,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 68,
     "numero": 68,
-    "titulo": "Novos Caminhos",
+    "titulo": "NOVOS CAMINHOS",
     "estrofes": [
       [
         { "texto": "Novos caminhos (novos caminhos)", "italico": true },
@@ -1703,7 +1703,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 69,
     "numero": 69,
-    "titulo": "Adorai Em Majestade",
+    "titulo": "ADORAI EM MAJESTADE",
     "estrofes": [
       [
         { "texto": "Adorai em majestade,", "italico": false },
@@ -1725,7 +1725,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 70,
     "numero": 70,
-    "titulo": "Nosso Deus É Soberano",
+    "titulo": "NOSSO DEUS É SOBERANO",
     "estrofes": [
       [
         { "texto": "Nosso Deus é Soberano", "italico": true },
@@ -1751,7 +1751,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 71,
     "numero": 71,
-    "titulo": "Amigo De Deus",
+    "titulo": "AMIGO DE DEUS",
     "estrofes": [
       [
         { "texto": "Não existe nada melhor", "italico": false },
@@ -1771,7 +1771,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 72,
     "numero": 72,
-    "titulo": "Só O Poder De Deus",
+    "titulo": "SÓ O PODER DE DEUS",
     "estrofes": [
       [
         { "texto": "Só o poder de Deus", "italico": false },
@@ -1788,7 +1788,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 73,
     "numero": 73,
-    "titulo": "Salmo 96",
+    "titulo": "SALMO 96",
     "estrofes": [
       [
         { "texto": "Cantai ao Senhor um cântico novo", "italico": false },
@@ -1813,7 +1813,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 74,
     "numero": 74,
-    "titulo": "Santo Lugar",
+    "titulo": "SANTO LUGAR",
     "estrofes": [
       [
         { "texto": "Há de ter um lugar", "italico": false },
@@ -1845,7 +1845,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 75,
     "numero": 75,
-    "titulo": "Ao Nosso Deus",
+    "titulo": "AO NOSSO DEUS",
     "estrofes": [
       [
         { "texto": "Ao Nosso Deus, que se assenta no trono", "italico": true },
@@ -1865,7 +1865,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 76,
     "numero": 76,
-    "titulo": "Jesus Cristo Mudou Meu Viver",
+    "titulo": "JESUS CRISTO MUDOU MEU VIVER",
     "estrofes": [
       [
         { "texto": "Jesus Cristo mudou meu viver! (2x)", "italico": true },
@@ -1889,7 +1889,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 77,
     "numero": 77,
-    "titulo": "Não Há Deus Maior",
+    "titulo": "NÃO HÁ DEUS MAIOR",
     "estrofes": [
       [
         { "texto": "Não há Deus maior!", "italico": true },
@@ -1911,7 +1911,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 78,
     "numero": 78,
-    "titulo": "Seja Engrandecido",
+    "titulo": "SEJA ENGRANDECIDO",
     "estrofes": [
       [
         { "texto": "Seja engrandecido,", "italico": false },
@@ -1933,7 +1933,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 79,
     "numero": 79,
-    "titulo": "Puro E Santo",
+    "titulo": "PURO E SANTO",
     "estrofes": [
       [
         { "texto": "Puro e santo quero ser", "italico": false },
@@ -1954,7 +1954,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 80,
     "numero": 80,
-    "titulo": "Doce Nome",
+    "titulo": "DOCE NOME",
     "estrofes": [
       [
         { "texto": "Só de ouvir Tua voz, de sentir Teu amor", "italico": false },
@@ -1974,7 +1974,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 81,
     "numero": 81,
-    "titulo": "Cântico Da Colheita",
+    "titulo": "CÂNTICO DA COLHEITA",
     "estrofes": [
       [ { "texto": "Paraparaparara parapapara parapapararara", "italico": true } ],
       [
@@ -2005,7 +2005,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 82,
     "numero": 82,
-    "titulo": "Santificação",
+    "titulo": "SANTIFICAÇÃO",
     "estrofes": [
       [
         { "texto": "Porquanto é santo Aquele que me chamou", "italico": false },
@@ -2030,7 +2030,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 83,
     "numero": 83,
-    "titulo": "Diante Do Trono De Deus",
+    "titulo": "DIANTE DO TRONO DE DEUS",
     "estrofes": [
       [
         { "texto": "Diante do trono de Deus nos céus", "italico": false },
@@ -2067,7 +2067,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 84,
     "numero": 84,
-    "titulo": "Ele É Exaltado",
+    "titulo": "ELE É EXALTADO",
     "estrofes": [
       [
         { "texto": "Ele é exaltado, o Rei exaltado nos céus!", "italico": false },
@@ -2089,7 +2089,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 85,
     "numero": 85,
-    "titulo": "Jesus, Em Tua Presença",
+    "titulo": "JESUS, EM TUA PRESENÇA",
     "estrofes": [
       [
         { "texto": "Só pra Te adorar!", "italico": true },
@@ -2117,7 +2117,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 86,
     "numero": 86,
-    "titulo": "Sempre A Ti Eu Graças Dou",
+    "titulo": "SEMPRE A TI EU GRAÇAS DOU",
     "estrofes": [
       [
         { "texto": "Aqui diante de Ti,", "italico": false },
@@ -2147,7 +2147,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 87,
     "numero": 87,
-    "titulo": "Celebração",
+    "titulo": "CELEBRAÇÃO",
     "estrofes": [
       [
         { "texto": "É tempo de celebrar!", "italico": false },
@@ -2182,7 +2182,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 88,
     "numero": 88,
-    "titulo": "Logo De Manhã",
+    "titulo": "LOGO DE MANHÃ",
     "estrofes": [
       [
         { "texto": "Logo de manhã, quero Te buscar", "italico": true },
@@ -2207,7 +2207,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 89,
     "numero": 89,
-    "titulo": "Vim Para Adorar-Te",
+    "titulo": "VIM PARA ADORAR-TE",
     "estrofes": [
       [
         { "texto": "Luz do mundo, vieste à Terra", "italico": false },
@@ -2237,7 +2237,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 90,
     "numero": 90,
-    "titulo": "Deus É Fiel",
+    "titulo": "DEUS É FIEL",
     "estrofes": [
       [
         { "texto": "Deus é fiel, é fiel!", "italico": true },
@@ -2268,7 +2268,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 91,
     "numero": 91,
-    "titulo": "Vem De Ti, Senhor",
+    "titulo": "VEM DE TI, SENHOR",
     "estrofes": [
       [
         { "texto": "Não tenho palavras", "italico": false },
@@ -2302,7 +2302,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 92,
     "numero": 92,
-    "titulo": "Calmo, Sereno E Tranquilo",
+    "titulo": "CALMO, SERENO E TRANQUILO",
     "estrofes": [
       [
         { "texto": "Calmo, sereno e tranquilo", "italico": false },
@@ -2327,7 +2327,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 93,
     "numero": 93,
-    "titulo": "Se Isso Não For Amor",
+    "titulo": "SE ISSO NÃO FOR AMOR",
     "estrofes": [
       [
         { "texto": "Deixou o esplendor de Sua glória", "italico": false },
@@ -2353,7 +2353,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 94,
     "numero": 94,
-    "titulo": "Consagração",
+    "titulo": "CONSAGRAÇÃO",
     "estrofes": [
       [
         { "texto": "Ao Rei dos reis consagro tudo o que sou", "italico": false },
@@ -2386,7 +2386,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 95,
     "numero": 95,
-    "titulo": "A Tua Palavra",
+    "titulo": "A TUA PALAVRA",
     "estrofes": [
       [
         { "texto": "A Tua palavra escondi", "italico": false },
@@ -2417,7 +2417,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 96,
     "numero": 96,
-    "titulo": "Por Amor",
+    "titulo": "POR AMOR",
     "estrofes": [
       [
         { "texto": "Por amor Deus se revelou", "italico": false },
@@ -2444,7 +2444,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 97,
     "numero": 97,
-    "titulo": "Cristo Vem Me Buscar",
+    "titulo": "CRISTO VEM ME BUSCAR",
     "estrofes": [
       [
         { "texto": "Cristo vem me buscar!", "italico": false },
@@ -2474,7 +2474,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 98,
     "numero": 98,
-    "titulo": "Digno É O Senhor",
+    "titulo": "DIGNO É O SENHOR",
     "estrofes": [
       [
         { "texto": "Pela cruz dou graças,", "italico": false },
@@ -2500,7 +2500,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 99,
     "numero": 99,
-    "titulo": "Nos Braços Do Meu Pai",
+    "titulo": "NOS BRAÇOS DO MEU PAI",
     "estrofes": [
       [
         { "texto": "Não há lugar melhor com tamanha paz", "italico": false },
@@ -2528,7 +2528,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 100,
     "numero": 100,
-    "titulo": "Meu Universo",
+    "titulo": "MEU UNIVERSO",
     "estrofes": [
       [
         { "texto": "Que sejas meu universo", "italico": false },
@@ -2561,7 +2561,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 101,
     "numero": 101,
-    "titulo": "Segundo A Vontade De Deus",
+    "titulo": "SEGUNDO A VONTADE DE DEUS",
     "estrofes": [
       [
         { "texto": "Não é minha vontade, mas é Tua;", "italico": false },
@@ -2600,7 +2600,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 102,
     "numero": 102,
-    "titulo": "Quero Buscar Teu Caminho",
+    "titulo": "QUERO BUSCAR TEU CAMINHO",
     "estrofes": [
       [
         { "texto": "Quero buscar Teu caminho, Senhor", "italico": false },
@@ -2636,7 +2636,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 103,
     "numero": 103,
-    "titulo": "Perto Quero Estar",
+    "titulo": "PERTO QUERO ESTAR",
     "estrofes": [
       [
         { "texto": "Perto quero estar,", "italico": false },
@@ -2669,7 +2669,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 104,
     "numero": 104,
-    "titulo": "Paz Às Nações",
+    "titulo": "PAZ ÀS NAÇÕES",
     "estrofes": [
       [
         { "texto": "Há muito ainda por fazer", "italico": false },
@@ -2701,7 +2701,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 105,
     "numero": 105,
-    "titulo": "Como Um Manancial",
+    "titulo": "COMO UM MANANCIAL",
     "estrofes": [
       [
         { "texto": "Homens:", "italico": false },
@@ -2746,7 +2746,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 106,
     "numero": 106,
-    "titulo": "Confio Em Ti",
+    "titulo": "CONFIO EM TI",
     "estrofes": [
       [
         { "texto": "Misteriosos feitos são as obras do meu Deus.", "italico": false },
@@ -2797,7 +2797,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 107,
     "numero": 107,
-    "titulo": "Cristo Salva",
+    "titulo": "CRISTO SALVA",
     "estrofes": [
       [
         { "texto": "Conhecemos as boas novas: Cristo salva!", "italico": false },
@@ -2830,7 +2830,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 108,
     "numero": 108,
-    "titulo": "Mapa Da Mina",
+    "titulo": "MAPA DA MINA",
     "estrofes": [
       [
         { "texto": "Todos buscam a felicidade,", "italico": false },
@@ -2866,7 +2866,7 @@ export const hymnsData: Hymn[] = [
   {
     "id": 109,
     "numero": 109,
-    "titulo": "Confiança",
+    "titulo": "CONFIANÇA",
     "estrofes": [
       [
         { "texto": "Sei que observas o meu coração", "italico": false },
