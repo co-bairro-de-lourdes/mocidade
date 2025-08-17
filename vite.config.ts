@@ -26,7 +26,8 @@ export default defineConfig(({ mode }) => ({
         name: "Cânticos Mocidade",
         short_name: "Cânticos",
         description: "App de letras dos cânticos da mocidade",
-        theme_color: "#ffffff",
+        theme_color: "#f8fafc",
+        background_color: "#f8fafc",
         icons: [
           {
             src: "web-app-manifest-192x192.png",

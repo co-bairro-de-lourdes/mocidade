@@ -11,7 +11,7 @@
     <meta name="keywords" content="cânticos, espirituais, religiosos, louvor, adoração, música sacra" />
 
     <link rel="mask-icon" href="/favicon.svg">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#f8fafc">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,16 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      function setThemeColor() {
+        const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+        const isDark = document.documentElement.classList.contains('dark');
+        metaThemeColor.setAttribute('content', isDark ? '#101318' : '#f8fafc');
+      }
+      const observer = new MutationObserver(setThemeColor);
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+      setThemeColor();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
