@@ -2725,7 +2725,7 @@ export const hymnsData: Hymn[] = [
         { "texto": "A pura Palavra como um manancial.", "italico": true }
       ],
       [
-        { "texto": "Mulheres", "italico": false },
+        { "texto": "Mulheres:", "italico": false },
         { "texto": "No interior do salvo há uma fonte a jorrar", "italico": false },
         { "texto": "Água da vida dada por Jesus", "italico": false },
         { "texto": "Quem beber desta água, sede nunca mais terá", "italico": false },
