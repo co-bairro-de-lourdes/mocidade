@@ -23,7 +23,8 @@ export const hymnsData: Hymn[] = [
       [
         { "texto": "Sentimos que Jesus está aqui", "italico": true },
         { "texto": "Em nosso meio", "italico": true },
-        { "texto": "Por isso temos paz no coração! (2x)", "italico": true }
+        { "texto": "Por isso temos paz no coração!", "italico": true },
+        { "texto": "(2x)", "italico": true }
       ]
     ]
   },
@@ -78,13 +79,12 @@ export const hymnsData: Hymn[] = [
     "estrofes": [
       [
         { "texto": "Senhor, eu quero sentir", "italico": true },
-        { "texto": "A Tua presença no meu coração! (2x)", "italico": true }
+        { "texto": "A Tua presença no meu coração!", "italico": true },
+        { "texto": "(2x)", "italico": true }
       ],
       [
         { "texto": "Ó, faz-me um crente sincero!", "italico": false },
-        { "texto": "De Ti eu quero aprender!", "italico": false }
-      ],
-      [
+        { "texto": "De Ti eu quero aprender!", "italico": false },
         { "texto": "Senhor, eu quero sentir", "italico": false },
         { "texto": "A Tua presença em todo o meu ser!", "italico": false }
       ]
@@ -97,19 +97,15 @@ export const hymnsData: Hymn[] = [
     "estrofes": [
       [
         { "texto": "Um sorriso se abrindo no olhar", "italico": false },
-        { "texto": "Todos juntos louvemos a Deus outra vez", "italico": false }
-      ],
-      [
+        { "texto": "Todos juntos louvemos a Deus outra vez", "italico": false },
         { "texto": "É tão bom ter você como irmão", "italico": false },
         { "texto": "E compartilhar do que Ele fez", "italico": false }
       ],
       [
         { "texto": "Levantemos as mãos ao Senhor", "italico": false },
-        { "texto": "Na alegria de juntos cantar numa só voz", "italico": false }
-      ],
-      [
-        { "texto": "É tão bom ter você como irmão E saber que", "italico": false },
-        { "texto": "Deus habita em nós! (3x)", "italico": true }
+        { "texto": "Na alegria de juntos cantar numa só voz", "italico": false },
+        { "texto": "É tão bom ter você como irmão", "italico": false },
+        { "texto": "E saber que Deus habita em nós! (3x)", "italico": true }
       ]
     ]
   },
@@ -121,17 +117,13 @@ export const hymnsData: Hymn[] = [
       [
         { "texto": "Estou cantando alegre", "italico": false },
         { "texto": "No caminho da verdade", "italico": false },
-        { "texto": "Com Jesus!", "italico": false }
-      ],
-      [
+        { "texto": "Com Jesus!", "italico": false },
         { "texto": "A cada passo encontro", "italico": false },
         { "texto": "Um motivo pra falar da sua cruz!", "italico": false }
       ],
       [
         { "texto": "Estreito é o caminho", "italico": false },
-        { "texto": "E às vezes é difícil continuar", "italico": false }
-      ],
-      [
+        { "texto": "E às vezes é difícil continuar", "italico": false },
         { "texto": "Alegre eu prossigo", "italico": false },
         { "texto": "Pois meu lar, em breve,", "italico": false },
         { "texto": "Hei de encontrar!", "italico": false }
@@ -205,8 +197,8 @@ export const hymnsData: Hymn[] = [
       [
         { "texto": "Esta paz que sinto em minha alma", "italico": false },
         { "texto": "Não é porque tudo me vai bem", "italico": false },
-        { "texto": "Esta paz que sinto em minha alma É porque eu", "italico": false },
-        { "texto": "louvo ao meu Senhor...", "italico": false }
+        { "texto": "Esta paz que sinto em minha alma", "italico": false },
+        { "texto": "É porque eu louvo ao meu Senhor...", "italico": false }
       ],
       [
         { "texto": "Não olho as circunstâncias (não, não, não)", "italico": true },
@@ -319,9 +311,10 @@ export const hymnsData: Hymn[] = [
         { "texto": "No Teu plano, Senhor, confiarei.", "italico": false }
       ],
       [
-        { "texto": "O confuso eu vou entender, O encoberto vai", "italico": false },
-        { "texto": "aparecer, O que está errado vai se acertar, Se", "italico": false },
-        { "texto": "em Tua luz, ó Senhor, eu andar!", "italico": false }
+        { "texto": "O confuso eu vou entender", "italico": false },
+        { "texto": "O encoberto vai aparecer, ", "italico": false },
+        { "texto": "O que está errado vai se acertar,", "italico": false },
+        { "texto": "Se em Tua luz, ó Senhor, eu andar!", "italico": false }
       ]
     ]
   },
@@ -356,14 +349,15 @@ export const hymnsData: Hymn[] = [
     "titulo": "RENDEI GRAÇAS",
     "estrofes": [
       [
-        { "texto": "Rendei graças ao Senhor,", "italico": false },
-        { "texto": "Porque o Senhor é bom,", "italico": false },
-        { "texto": "Porque a Sua misericórdia", "italico": false },
-        { "texto": "Dura para sempre.", "italico": false }
+        { "texto": "Rendei graças ao Senhor,", "italico": true },
+        { "texto": "Porque o Senhor é bom,", "italico": true },
+        { "texto": "Porque a Sua misericórdia", "italico": true },
+        { "texto": "Dura para sempre.", "italico": true }
       ],
       [
         { "texto": "Porque acima dos céus", "italico": false },
-        { "texto": "É Sua fidelidade, De geração a geração.", "italico": false },
+        { "texto": "É Sua fidelidade", "italico": false },
+        { "texto": "De geração a geração.", "italico": false },
         { "texto": "As Suas misericórdias", "italico": true },
         { "texto": "Subsistem para sempre,", "italico": true },
         { "texto": "Pois o Senhor é o Deus eterno.", "italico": true }
@@ -418,21 +412,21 @@ export const hymnsData: Hymn[] = [
     "titulo": "MINHA FORÇA",
     "estrofes": [
       [
-        { "texto": "O Senhor é a minha força", "italico": false },
-        { "texto": "E o meu cântico", "italico": false },
-        { "texto": "Porque Ele me salvou.", "italico": false },
-        { "texto": "(2x)", "italico": false }
+        { "texto": "O Senhor é a minha força", "italico": true },
+        { "texto": "E o meu cântico", "italico": true },
+        { "texto": "Porque Ele me salvou.", "italico": true },
+        { "texto": "(2x)", "italico": true }
       ],
       [
-        { "texto": "Na tenda do justo", "italico": false },
-        { "texto": "Há voz de júbilo e de salvação", "italico": false },
-        { "texto": "A destra do Senhor faz proezas", "italico": false },
-        { "texto": "(2x)", "italico": false }
+        { "texto": "Na tenda do justo", "italico": true },
+        { "texto": "Há voz de júbilo e de salvação", "italico": true },
+        { "texto": "A destra do Senhor faz proezas", "italico": true },
+        { "texto": "(2x)", "italico": true }
       ],
       [
-        { "texto": "Não morrerei, mas viverei", "italico": false },
-        { "texto": "E contarei as obras do Senhor!", "italico": false },
-        { "texto": "(2x)", "italico": false }
+        { "texto": "Não morrerei, mas viverei", "italico": true },
+        { "texto": "E contarei as obras do Senhor!", "italico": true },
+        { "texto": "(2x)", "italico": true }
       ]
     ]
   },
@@ -451,9 +445,7 @@ export const hymnsData: Hymn[] = [
         { "texto": "Eu era culpado", "italico": false },
         { "texto": "E meu pecado Ele apagou", "italico": false },
         { "texto": "Minha triste sorte,", "italico": false },
-        { "texto": "A minha morte Ele provou", "italico": false }
-      ],
-      [
+        { "texto": "A minha morte Ele provou", "italico": false },
         { "texto": "E por isso eu declaro em claro e alto som", "italico": false },
         { "texto": "Oh! Provai e vede que Ele é bom!", "italico": true }
       ]
@@ -659,7 +651,8 @@ export const hymnsData: Hymn[] = [
       [
         { "texto": "Porque tudo que há dentro de mim", "italico": false },
         { "texto": "Necessita ser mudado, Senhor", "italico": false },
-        { "texto": "Porque tudo que há Dentro do meu coração", "italico": false },
+        { "texto": "Porque tudo que há", "italico": false },
+        { "texto": "Dentro do meu coração", "italico": false },
         { "texto": "Necessita mais de Ti!", "italico": false }
       ]
     ]
@@ -956,7 +949,7 @@ export const hymnsData: Hymn[] = [
     "estrofes": [
       [
         { "texto": "Deus amou o mundo de tal maneira", "italico": true },
-        { "texto": "Que deu Seu Unico Filho,", "italico": true },
+        { "texto": "Que deu Seu Único Filho,", "italico": true },
         { "texto": "Para que todo aquele que nEle crê", "italico": true },
         { "texto": "Não pereça, mas tenha a vida eterna!", "italico": true },
         { "texto": "(2x)", "italico": true }
@@ -1100,10 +1093,10 @@ export const hymnsData: Hymn[] = [
         { "texto": "O bom combate pela fé", "italico": false },
         { "texto": "Se vagas querem me tragar,", "italico": false },
         { "texto": "NEle a vitória certa é", "italico": false },
-        { "texto": "Durante a noite Ele é a luz,", "italico": false },
-        { "texto": "Até que chegue o alvorecer", "italico": false },
-        { "texto": "No dia quando o Rei Jesus", "italico": false },
-        { "texto": "Dos céus em glória vai descer.", "italico": false }
+        { "texto": "Durante a noite Ele é a luz,", "italico": true },
+        { "texto": "Até que chegue o alvorecer", "italico": true },
+        { "texto": "No dia quando o Rei Jesus", "italico": true },
+        { "texto": "Dos céus em glória vai descer.", "italico": true }
       ]
     ]
   },
