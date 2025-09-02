@@ -1349,14 +1349,14 @@ export const hymnsData: Hymn[] = [
     "titulo": "EU TE LOUVAREI",
     "estrofes": [
       [
-        { "texto": "Eu Te louvarei, Senhor,", "italico": false },
-        { "texto": "De todo o meu coração!", "italico": false },
-        { "texto": "(2x)", "italico": false }
+        { "texto": "Eu Te louvarei, Senhor,", "italico": true },
+        { "texto": "De todo o meu coração!", "italico": true },
+        { "texto": "(2x)", "italico": true }
       ],
       [
-        { "texto": "Na presença dos anjos", "italico": false },
-        { "texto": "A Ti cantarei louvores!", "italico": false },
-        { "texto": "(2x)", "italico": false }
+        { "texto": "Na presença dos anjos", "italico": true },
+        { "texto": "A Ti cantarei louvores!", "italico": true },
+        { "texto": "(2x)", "italico": true }
       ]
     ]
   },
@@ -1444,14 +1444,14 @@ export const hymnsData: Hymn[] = [
         { "texto": "E rompendo as barreiras pelo amor", "italico": false }
       ],
       [
-        { "texto": "E na força do Espírito Santo", "italico": false },
-        { "texto": "Nós proclamamos aqui", "italico": false },
-        { "texto": "Que pagaremos o preço", "italico": false },
-        { "texto": "De sermos um só coração no Senhor,", "italico": false },
-        { "texto": "E por mais que as trevas militem", "italico": false },
-        { "texto": "E nos tentem separar,", "italico": false },
-        { "texto": "Com os nossos olhos em Cristo,", "italico": false },
-        { "texto": "Unidos iremos andar! (2x)", "italico": false }
+        { "texto": "E na força do Espírito Santo", "italico": true },
+        { "texto": "Nós proclamamos aqui", "italico": true },
+        { "texto": "Que pagaremos o preço", "italico": true },
+        { "texto": "De sermos um só coração no Senhor,", "italico": true },
+        { "texto": "E por mais que as trevas militem", "italico": true },
+        { "texto": "E nos tentem separar,", "italico": true },
+        { "texto": "Com os nossos olhos em Cristo,", "italico": true },
+        { "texto": "Unidos iremos andar! (2x)", "italico": true }
       ]
     ]
   },
@@ -1464,7 +1464,7 @@ export const hymnsData: Hymn[] = [
         { "texto": "O meu louvor é fruto", "italico": true },
         { "texto": "Do meu amor por Ti, Jesus", "italico": true },
         { "texto": "De lábios que confessam o Teu Nome", "italico": true },
-        { "texto": "E fruto de Tua graça", "italico": true },
+        { "texto": "É fruto de Tua graça", "italico": true },
         { "texto": "E da paz que encontro em Ti", "italico": true },
         { "texto": "E do Teu Espírito", "italico": true },
         { "texto": "Que habita em mim (2x)", "italico": true }
@@ -1477,8 +1477,7 @@ export const hymnsData: Hymn[] = [
       ],
       [
         { "texto": "Ainda que cadeias venham me prender", "italico": false },
-        { "texto": "Ainda que os homens", "italico": false },
-        { "texto": "se levantem contra mim", "italico": false },
+        { "texto": "Ainda que os homens se levantem contra mim", "italico": false },
         { "texto": "Meus lábios não se fecharão", "italico": false },
         { "texto": "Pra sempre hei de Te louvar!", "italico": false }
       ]
@@ -1810,7 +1809,7 @@ export const hymnsData: Hymn[] = [
     "estrofes": [
       [
         { "texto": "Há de ter um lugar", "italico": false },
-        { "texto": "Onde o tempo ha de parar,", "italico": false },
+        { "texto": "Onde o tempo há de parar,", "italico": false },
         { "texto": "Onde a paz se faz real", "italico": false },
         { "texto": "E o irreal amor não há, não!", "italico": false },
         { "texto": "Sei que há, pois Deus o diz", "italico": false },
@@ -1862,7 +1861,7 @@ export const hymnsData: Hymn[] = [
     "estrofes": [
       [
         { "texto": "Jesus Cristo mudou meu viver! (2x)", "italico": true },
-        { "texto": "E a Luz que ilumina meu ser", "italico": false },
+        { "texto": "É a Luz que ilumina meu ser", "italico": false },
         { "texto": "Sim, Jesus Cristo mudou meu viver!", "italico": false }
       ],
       [
@@ -1914,7 +1913,8 @@ export const hymnsData: Hymn[] = [
         { "texto": "Meus lábios sempre Te exaltarão", "italico": false }
       ],
       [
-        { "texto": "Aleluia! (Aleluia!) Te louvo! (Te louvo!)", "italico": true },
+        { "texto": "Aleluia! (Aleluia!)", "italico": true },
+        { "texto": "Aleluia! (Aleluia!)", "italico": true },
         { "texto": "Pois sei que sobre todos és Senhor!", "italico": true }
       ],
       [
@@ -1939,7 +1939,7 @@ export const hymnsData: Hymn[] = [
         { "texto": "Grande és Tu e pequeno sou", "italico": false },
         { "texto": "Mas louvores a Ti eu dou", "italico": false },
         { "texto": "Tu és Rei sobre meu viver", "italico": false },
-        { "texto": "E contio no Teu poder!", "italico": false },
+        { "texto": "E confio no Teu poder!", "italico": false },
         { "texto": "Santo! Santo! Santo Deus! (2x)", "italico": true }
       ]
     ]
@@ -2092,7 +2092,8 @@ export const hymnsData: Hymn[] = [
         { "texto": "(2x)", "italico": true }
       ],
       [
-        { "texto": "Jesus, em Tua presença, Reunimo-nos aqui", "italico": false },
+        { "texto": "Jesus, em Tua presença,", "italico": false },
+        { "texto": "Reunimo-nos aqui", "italico": false },
         { "texto": "Contemplamos Tua face", "italico": false },
         { "texto": "E rendemo-nos a Ti", "italico": false },
         { "texto": "Pois um dia a Tua morte", "italico": false },
@@ -2145,7 +2146,8 @@ export const hymnsData: Hymn[] = [
       [
         { "texto": "É tempo de celebrar!", "italico": false },
         { "texto": "É tempo de agradecer!", "italico": false },
-        { "texto": "O Senhor tem feito grandes coisas entre nós!", "italico": false },
+        { "texto": "O Senhor tem feito", "italico": false },
+        { "texto": "grandes coisas entre nós!", "italico": false },
         { "texto": "E tempo de, então, cantar", "italico": false },
         { "texto": "louvores ao nosso Deus", "italico": false },
         { "texto": "Pela voz! Pela vida!", "italico": false },
@@ -2442,7 +2444,7 @@ export const hymnsData: Hymn[] = [
       [
         { "texto": "Cristo vem me buscar!", "italico": false },
         { "texto": "Para o céu me levará!", "italico": false },
-        { "texto": "O cordeiro prometido voltara!", "italico": false }
+        { "texto": "O cordeiro prometido voltará!", "italico": false }
       ],
       [
         { "texto": "Oh! Glória, aleluia!", "italico": true },
@@ -2570,7 +2572,8 @@ export const hymnsData: Hymn[] = [
         { "texto": "mas a Tua vontade;", "italico": true },
         { "texto": "Não os meus descaminhos,", "italico": true },
         { "texto": "mas os caminhos Teus", "italico": true },
-        { "texto": "Que eu reflita e proclame aos amigos e ao mundo", "italico": true },
+        { "texto": "Que eu reflita e proclame", "italico": true },
+        { "texto": "aos amigos e ao mundo", "italico": true },
         { "texto": "Que só vivo segundo a vontade de Deus.", "italico": true },
         { "texto": "(2x)", "italico": true }
       ],
@@ -2742,7 +2745,8 @@ export const hymnsData: Hymn[] = [
     "titulo": "CONFIO EM TI",
     "estrofes": [
       [
-        { "texto": "Misteriosos feitos são as obras do meu Deus.", "italico": false },
+        { "texto": "Misteriosos feitos", "italico": false },
+        { "texto": "são as obras do meu Deus.", "italico": false },
         { "texto": "Caminha sobre o temporal.", "italico": false },
         { "texto": "O vento e o mar são seus.", "italico": false },
         { "texto": "Está no oculto a trabalhar,", "italico": false },
@@ -2879,7 +2883,8 @@ export const hymnsData: Hymn[] = [
         { "texto": "Como posso Te agradecer", "italico": false },
         { "texto": "Sei que cuidas de mim", "italico": false },
         { "texto": "Infinito em amor", "italico": false },
-        { "texto": "Sempre Te bendirei, Meu Senhor!", "italico": false }
+        { "texto": "Sempre Te bendirei,", "italico": false },
+        { "texto": "Meu Senhor!", "italico": false }
       ]
     ]
   }
