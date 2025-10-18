@@ -19,11 +19,11 @@ export function HymnCard({ hymn, onClick, searchTerm }: HymnCardProps) {
   }
 
   const firstVerse = hymn.estrofes.flat().map(line => line.texto).join("\n")
-  const firstVerseText = firstVerse.substring(0, 120) + (firstVerse.length > 120 ? "..." : "")
 
+  
   return (
     <div 
-      className="rounded-lg border bg-hymn-card text-card-foreground shadow-sm hymn-card-hover cursor-pointer border-border/50"
+      className="rounded-lg border bg-hymn-card text-card-foreground shadow-sm transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1 cursor-pointer border-border/50"
       onClick={onClick}
     >
       <div className="flex flex-col space-y-1.5 p-6 pb-3">
@@ -36,9 +36,9 @@ export function HymnCard({ hymn, onClick, searchTerm }: HymnCardProps) {
           </h3>
         </div>
       </div>
-      <div className="p-6 pt-0">
-        <p className="text-sm text-hymn-text/80 leading-relaxed">
-          {searchTerm ? highlightText(firstVerseText, searchTerm) : firstVerseText}
+      <div className="p-6 pt-0 max-h-24">
+        <p className="text-sm text-hymn-text/80 leading-relaxed line-clamp-3">
+          {searchTerm ? highlightText(firstVerse, searchTerm) : firstVerse}
         </p>
       </div>
     </div>
