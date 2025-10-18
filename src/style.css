@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@custom-variant hover (&:hover);
 
 /* Design system for spiritual hymns app - elegant and serene */
 
@@ -129,32 +130,30 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+* {
+  @apply border-border;
+}
 
-  body {
-    @apply bg-hymn-bg text-foreground font-sans transition-colors duration-300;
-  }
+body {
+  @apply bg-hymn-bg text-foreground font-sans transition-colors duration-300;
+}
 
-  .hymn-content {
-    @apply transition-all duration-200 ease-in-out;
-  }
+.hymn-content {
+  @apply transition-all duration-200 ease-in-out;
+}
 
-  .search-highlight {
-    @apply bg-primary/20 px-1 rounded;
-  }
+.search-highlight {
+  @apply bg-primary/20 px-1 rounded;
+}
 
-  .verse-line {
-    @apply leading-relaxed mb-2;
-  }
+.verse-line {
+  @apply leading-relaxed mb-2;
+}
 
-  .hymn-card-hover {
-    @apply transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1;
-  }
+.hymn-card-hover {
+  @apply transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1;
+}
 
-  .theme-transition {
-    @apply transition-colors duration-300;
-  }
+.theme-transition {
+  @apply transition-colors duration-300;
 }

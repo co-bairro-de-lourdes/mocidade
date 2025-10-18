@@ -56,7 +56,7 @@ const Index = () => {
 
   return (
     <ThemeProvider defaultTheme="light">
-      <div className="min-h-screen bg-hymn-bg theme-transition">
+      <div className="select-none min-h-screen bg-hymn-bg theme-transition">
         <div className="container mx-auto px-4 py-8 max-w-6xl">
           {/* Header */}
           <div className="flex items-center justify-between mb-8">

@@ -1914,7 +1914,7 @@ export const hymnsData: Hymn[] = [
       ],
       [
         { "texto": "Aleluia! (Aleluia!)", "italico": true },
-        { "texto": "Aleluia! (Aleluia!)", "italico": true },
+        { "texto": "Te louvo! (Te louvo!)", "italico": true },
         { "texto": "Pois sei que sobre todos és Senhor!", "italico": true }
       ],
       [
