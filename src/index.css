@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Design system for spiritual hymns app - elegant and serene */
 
@@ -129,7 +127,7 @@
   }
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border;
   }
@@ -157,4 +155,4 @@
   .theme-transition {
     @apply transition-colors duration-300;
   }
-}
+} */
