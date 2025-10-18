@@ -23,7 +23,7 @@ export function HymnCard({ hymn, onClick, searchTerm }: HymnCardProps) {
   
   return (
     <div 
-      className="rounded-lg border bg-hymn-card text-card-foreground shadow-sm transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1 cursor-pointer border-border/50"
+      className="rounded-lg border bg-hymn-card text-card-foreground shadow-sm hymn-card-hover cursor-pointer border-border/50"
       onClick={onClick}
     >
       <div className="flex flex-col space-y-1.5 p-6 pb-3">
