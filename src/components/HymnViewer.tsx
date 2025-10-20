@@ -5,10 +5,9 @@ import { cn } from "@/lib/utils"
 
 interface HymnViewerProps {
   hymn: Hymn
-  onBack: () => void
 }
 
-export function HymnViewer({ hymn, onBack }: HymnViewerProps) {
+export function HymnViewer({ hymn }: HymnViewerProps) {
   const [fontSize, setFontSize] = useState(16)
 
   const increaseFontSize = () => {
@@ -22,7 +21,10 @@ export function HymnViewer({ hymn, onBack }: HymnViewerProps) {
   return (
     <div className="animate-fade-in">
       <div className="select-none flex items-center justify-between mb-6">
-        <button onClick={onBack} className="cursor-pointer inline-flex items-center justify-center h-10 px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors gap-2">
+        <button
+          onClick={() => window.history.back()}
+          className="cursor-pointer inline-flex items-center justify-center h-10 px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors gap-2"
+        >
           <ArrowLeft className="h-4 w-4" />
           Voltar
         </button>
