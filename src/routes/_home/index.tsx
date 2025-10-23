@@ -1,31 +1,34 @@
-import { HymnCard } from "@/components/HymnCard"
-import { SearchInput } from "@/components/SearchInput"
-import { ThemeToggle } from "@/components/ThemeToggle"
-import { hymnsData } from "@/lib/hymns-data"
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router"
-import { Book, Music } from "lucide-react"
-import { useEffect, useMemo, useRef, useState } from "react"
+import { HymnCard } from "@/components/HymnCard";
+import { SearchInput } from "@/components/SearchInput";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { hymnsData } from "@/lib/hymns-data";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { Book, Music } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
-export const Route = createFileRoute('/_home/')({
+export const Route = createFileRoute("/_home/")({
   component: Home,
-})
+});
 
 function Home() {
-  const [searchTerm, setSearchTerm] = useState("")
-  const hymnRefs = useRef<{ [key: number]: HTMLDivElement | null }>({})
+  const [searchTerm, setSearchTerm] = useState("");
+  const hymnRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const filteredHymns = useMemo(() => {
-    if (!searchTerm) return hymnsData
+    if (!searchTerm) return hymnsData;
 
-    const term = searchTerm.toLowerCase()
-    return hymnsData.filter(hymn => 
-      hymn.titulo.toLowerCase().includes(term) ||
-      hymn.numero.toString().includes(term) ||
-      hymn.estrofes.some(estrofe => estrofe.some(line => line.texto.toLowerCase().includes(term)))
-    )
-  }, [searchTerm])
+    const term = searchTerm.toLowerCase();
+    return hymnsData.filter(
+      (hymn) =>
+        hymn.titulo.toLowerCase().includes(term) ||
+        hymn.numero.toString().includes(term) ||
+        hymn.estrofes.some((estrofe) =>
+          estrofe.some((line) => line.texto.toLowerCase().includes(term)),
+        ),
+    );
+  }, [searchTerm]);
 
   return (
     <div className="select-none min-h-screen bg-hymn-bg theme-transition">
@@ -55,7 +58,10 @@ function Home() {
         {/* Results count */}
         <div className="mb-6">
           <p className="text-sm text-muted-foreground">
-            {filteredHymns.length} {filteredHymns.length === 1 ? 'hino encontrado' : 'hinos encontrados'}
+            {filteredHymns.length}{" "}
+            {filteredHymns.length === 1
+              ? "hino encontrado"
+              : "hinos encontrados"}
           </p>
         </div>
 
@@ -65,16 +71,16 @@ function Home() {
             <div
               key={hymn.id}
               className="animate-slide-up"
-              ref={el => hymnRefs.current[hymn.id] = el}
+              ref={(el) => (hymnRefs.current[hymn.id] = el)}
             >
               <HymnCard
                 hymn={hymn}
                 searchTerm={searchTerm}
                 onClick={() => {
                   navigate({
-                    to:"/hino/$id",
-                    params: { id: hymn.numero.toString() }
-                  })
+                    to: "/hino/$id",
+                    params: { id: hymn.numero.toString() },
+                  });
                 }}
               />
             </div>
@@ -85,7 +91,9 @@ function Home() {
         {filteredHymns.length === 0 && (
           <div className="text-center py-12">
             <Book className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-foreground mb-2">Nenhum hino encontrado</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-2">
+              Nenhum hino encontrado
+            </h3>
             <p className="text-muted-foreground">
               Tente buscar com outros termos ou verifique a ortografia.
             </p>
@@ -93,5 +101,5 @@ function Home() {
         )}
       </div>
     </div>
-  )
+  );
 }

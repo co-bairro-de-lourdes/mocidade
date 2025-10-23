@@ -12,7 +12,7 @@ import NotFound from "./components/NotFound";
 const router = createRouter({
   routeTree,
   defaultNotFoundComponent: NotFound,
-  scrollRestoration: true
+  scrollRestoration: true,
 });
 
 // Register the router instance for type safety
@@ -29,6 +29,6 @@ if (!rootElement.innerHTML) {
   root.render(
     <StrictMode>
       <RouterProvider router={router} />
-    </StrictMode>
+    </StrictMode>,
   );
 }

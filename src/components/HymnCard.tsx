@@ -1,28 +1,34 @@
-import { Hymn } from "@/lib/hymns-data"
+import { Hymn } from "@/lib/hymns-data";
 
 interface HymnCardProps {
-  hymn: Hymn
-  onClick: () => void
-  searchTerm?: string
+  hymn: Hymn;
+  onClick: () => void;
+  searchTerm?: string;
 }
 
 export function HymnCard({ hymn, onClick, searchTerm }: HymnCardProps) {
   const highlightText = (text: string, search: string) => {
-    if (!search) return text
-    
-    const parts = text.split(new RegExp(`(${search})`, 'gi'))
-    return parts.map((part, index) => 
+    if (!search) return text;
+
+    const parts = text.split(new RegExp(`(${search})`, "gi"));
+    return parts.map((part, index) =>
       part.toLowerCase() === search.toLowerCase() ? (
-        <span key={index} className="search-highlight">{part}</span>
-      ) : part
-    )
-  }
+        <span key={index} className="search-highlight">
+          {part}
+        </span>
+      ) : (
+        part
+      ),
+    );
+  };
 
-  const firstVerse = hymn.estrofes.flat().map(line => line.texto).join("\n")
+  const firstVerse = hymn.estrofes
+    .flat()
+    .map((line) => line.texto)
+    .join("\n");
 
-  
   return (
-    <div 
+    <div
       className="rounded-lg border bg-hymn-card text-card-foreground shadow-sm hymn-card-hover cursor-pointer border-border/50"
       onClick={onClick}
     >
@@ -42,5 +48,5 @@ export function HymnCard({ hymn, onClick, searchTerm }: HymnCardProps) {
         </p>
       </div>
     </div>
-  )
+  );
 }
