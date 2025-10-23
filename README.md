@@ -3,12 +3,14 @@
 Projeto web para visualização e pesquisa de hinos, desenvolvido com Vite, React, TypeScript e TailwindCSS.
 
 ## Funcionalidades
+
 - Busca de hinos por nome ou número
 - Visualização de detalhes dos hinos
 - Tema escuro/claro
 - Ícone personalizado de nota musical
 
 ## Tecnologias Utilizadas
+
 - [Vite](https://vitejs.dev/) (build e dev server)
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -31,9 +33,11 @@ Projeto web para visualização e pesquisa de hinos, desenvolvido com Vite, Reac
 ```bash
 npm run build
 ```
+
 Os arquivos finais estarão na pasta `dist`.
 
 ## Estrutura de pastas
+
 ```
 public/        # Arquivos estáticos (favicon, PDFs, JSONs, etc)
 src/           # Código-fonte React/TypeScript
@@ -44,9 +48,11 @@ src/           # Código-fonte React/TypeScript
 ```
 
 ## Favicon
+
 O projeto utiliza um favicon SVG personalizado de nota musical, localizado em `public/favicon.svg`.
 
 ## Créditos
+
 - Ícone musical criado por [GitHub Copilot]
 - Desenvolvido por Lucas Fernandes
 

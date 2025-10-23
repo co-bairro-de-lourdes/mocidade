@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { VitePWA } from "vite-plugin-pwa";
-import tailwindcss from '@tailwindcss/vite'
-import { tanstackRouter } from '@tanstack/router-plugin/vite'
+import tailwindcss from "@tailwindcss/vite";
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     tanstackRouter({
-      target: 'react',
+      target: "react",
       autoCodeSplitting: true,
     }),
     react(),
@@ -24,10 +24,10 @@ export default defineConfig(({ mode }) => ({
       },
       registerType: "autoUpdate",
       includeAssets: ["favicon.svg"],
-      injectRegister: 'auto',
+      injectRegister: "auto",
       workbox: {
         clientsClaim: true,
-        skipWaiting: true
+        skipWaiting: true,
       },
       manifest: {
         name: "Cânticos Mocidade",
