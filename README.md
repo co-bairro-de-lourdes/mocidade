@@ -19,13 +19,13 @@ Projeto web para visualização e pesquisa de hinos, desenvolvido com Vite, Reac
 ## Como rodar o projeto
 
 1. Instale as dependências:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 2. Inicie o servidor de desenvolvimento:
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 3. Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
 ## Build para produção

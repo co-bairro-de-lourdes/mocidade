@@ -1,49 +1,49 @@
 <!doctype html>
 <html lang="pt-BR" translate="no">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/src/style.css" rel="stylesheet" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-        <meta name="google" content="notranslate" />
-        <title>Cânticos Mocidade</title>
-        <meta
-            name="description"
-            content="Explore nossa coleção de cânticos espirituais com busca avançada e controles de visualização personalizáveis"
-        />
-        <meta name="author" content="Cânticos Mocidade" />
-        <meta
-            name="keywords"
-            content="cânticos, espirituais, religiosos, louvor, adoração, música sacra"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <meta name="google" content="notranslate" />
+    <title>Cânticos Mocidade</title>
+    <meta
+      name="description"
+      content="Explore nossa coleção de cânticos espirituais com busca avançada e controles de visualização personalizáveis"
+    />
+    <meta name="author" content="Cânticos Mocidade" />
+    <meta
+      name="keywords"
+      content="cânticos, espirituais, religiosos, louvor, adoração, música sacra"
+    />
 
-        <link rel="mask-icon" href="/favicon.svg" />
-        <meta name="theme-color" content="#f8fafc" />
+    <link rel="mask-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#f8fafc" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <div id="root"></div>
-        <script>
-            function setThemeColor() {
-                const metaThemeColor = document.querySelector('meta[name="theme-color"]')
-                const isDark = document.documentElement.classList.contains('dark')
-                metaThemeColor.setAttribute('content', isDark ? '#101318' : '#f8fafc')
-            }
-            const observer = new MutationObserver(setThemeColor)
-            observer.observe(document.documentElement, {
-                attributes: true,
-                attributeFilter: ['class'],
-            })
-            setThemeColor()
-        </script>
-        <script type="module" src="/src/main.tsx"></script>
-    </body>
+  <body>
+    <div id="root"></div>
+    <script>
+      function setThemeColor() {
+        const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+        const isDark = document.documentElement.classList.contains('dark')
+        metaThemeColor.setAttribute('content', isDark ? '#101318' : '#f8fafc')
+      }
+      const observer = new MutationObserver(setThemeColor)
+      observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class'],
+      })
+      setThemeColor()
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
