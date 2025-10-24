@@ -1,41 +1,41 @@
 {
-    "name": "canticos-mocidade",
-    "private": true,
-    "version": "1.1.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "build:dev": "vite build --mode development",
-        "lint": "eslint .",
-        "preview": "vite preview"
-    },
-    "dependencies": {
-        "@tailwindcss/vite": "^4.1.14",
-        "@tanstack/react-router": "^1.133.15",
-        "@tanstack/react-router-devtools": "^1.133.15",
-        "clsx": "^2.1.1",
-        "lucide-react": "^0.462.0",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-        "tailwind-merge": "^2.6.0",
-        "tailwindcss": "^4.1.14",
-        "tailwindcss-animate": "^1.0.7"
-    },
-    "devDependencies": {
-        "@eslint/js": "^9.32.0",
-        "@tanstack/router-plugin": "^1.133.15",
-        "@types/node": "^22.16.5",
-        "@types/react": "^18.3.23",
-        "@types/react-dom": "^18.3.7",
-        "@vitejs/plugin-react-swc": "^3.11.0",
-        "eslint": "^9.32.0",
-        "eslint-plugin-react-hooks": "^5.2.0",
-        "eslint-plugin-react-refresh": "^0.4.20",
-        "globals": "^15.15.0",
-        "typescript": "^5.8.3",
-        "typescript-eslint": "^8.38.0",
-        "vite": "^7.1.12",
-        "vite-plugin-pwa": "^1.0.2"
-    }
+  "name": "canticos-mocidade",
+  "private": true,
+  "version": "1.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@tanstack/react-router": "^1.133.15",
+    "@tanstack/react-router-devtools": "^1.133.15",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.462.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss": "^4.1.14",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@tanstack/router-plugin": "^1.133.15",
+    "@types/node": "^22.16.5",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react-swc": "^3.11.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^15.15.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0",
+    "vite": "^7.1.12",
+    "vite-plugin-pwa": "^1.0.2"
+  }
 }
