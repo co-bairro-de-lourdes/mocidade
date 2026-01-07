@@ -4200,7 +4200,7 @@ export const hymnsData: Hymn[] = [
         { texto: 'No vínculo da paz.', italico: false },
       ],
       [
-        { texto: 'Há um só corpo e um só Espírito,', italico: true },
+        { texto: 'Há um só corpo e um Espírito,', italico: true },
         { texto: 'só uma esperança da vossa vocação;', italico: true },
         { texto: 'há um só Senhor, uma só fé, um só batismo', italico: true },
         { texto: 'um só Deus e Pai de todos,', italico: true },
@@ -4217,7 +4217,7 @@ export const hymnsData: Hymn[] = [
         { texto: 'Em Cristo somos um!', italico: false },
       ],
       [
-        { texto: 'Há um só corpo e um só Espírito,', italico: true },
+        { texto: 'Há um só corpo e um Espírito,', italico: true },
         { texto: 'só uma esperança da vossa vocação;', italico: true },
         { texto: 'há um só Senhor, uma só fé, um só batismo', italico: true },
         { texto: 'um só Deus e Pai de todos,', italico: true },
@@ -4256,7 +4256,7 @@ export const hymnsData: Hymn[] = [
         { texto: 'Vivemos num só corpo em comunhão', italico: false },
         { texto: 'Por sua cruz, por sua cruz!', italico: false },
         { texto: 'Alicerçados fomos nesta luz,', italico: false },
-        { texto: 'A pedra singular, sim, é Jesus', italico: false },
+        { texto: 'A pedra angular, sim, é Jesus', italico: false },
         { texto: 'Que em vida santa e reta nos conduz', italico: false },
         { texto: 'Por sua cruz, por sua cruz!', italico: false },
       ],
