@@ -4139,9 +4139,14 @@ export const hymnsData: Hymn[] = [
         { texto: 'Em comunhão', italico: true },
       ],
       [
+        { texto: 'O compromisso de edificar', italico: true },
+        { texto: 'De repartir e abençoar', italico: true },
         { texto: 'Sempre uns aos outros', italico: true },
         { texto: 'Em comunhão', italico: true },
-        { texto: '2x', italico: true },
+      ],
+      [
+        { texto: 'Sempre uns aos outros', italico: true },
+        { texto: 'Em comunhão', italico: true },
       ],
     ],
   },
