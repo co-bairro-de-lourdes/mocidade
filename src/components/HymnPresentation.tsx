@@ -1,7 +1,5 @@
-import { useIsMobile } from '@/hooks/use-mobile'
 import { Hymn } from '@/lib/hymns-data'
 import { cn } from '@/lib/utils'
-import { useNavigate } from '@tanstack/react-router'
 import { Minimize } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
@@ -10,7 +8,7 @@ interface HymnPresentationProps {
   onClose: () => void
 }
 
-const FONT_SIZE = 40
+const FONT_SIZE = 44
 
 export function HymnPresentation({ hymn, onClose }: HymnPresentationProps) {
   const [page, setPage] = useState(0)
@@ -88,7 +86,7 @@ export function HymnPresentation({ hymn, onClose }: HymnPresentationProps) {
             {estrofe.map((line, lineIndex) => (
               <div
                 key={lineIndex}
-                className={cn('verse-line', {
+                className={cn('verse-line font-semibold', {
                   italic: line.italico,
                 })}
               >
