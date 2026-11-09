@@ -1,4 +1,7 @@
+import { useIsMobile } from '@/hooks/use-mobile'
 import { Hymn } from '@/lib/hymns-data'
+import { useNavigate } from '@tanstack/react-router'
+import { Presentation } from 'lucide-react'
 
 interface HymnCardProps {
   hymn: Hymn
@@ -7,6 +10,8 @@ interface HymnCardProps {
 }
 
 export function HymnCard({ hymn, onClick, searchTerm }: HymnCardProps) {
+  const isMobile = useIsMobile()
+  const navigate = useNavigate()
   const highlightText = (text: string, search: string) => {
     if (!search) return text
 
@@ -27,9 +32,18 @@ export function HymnCard({ hymn, onClick, searchTerm }: HymnCardProps) {
     .map((line) => line.texto)
     .join('\n')
 
+  const handlePresentation = (e) => {
+    e.stopPropagation()
+    navigate({
+      to: '/hino/$id',
+      params: { id: hymn.numero.toString() },
+      search: { isPresenting: true },
+    })
+  }
+
   return (
     <div
-      className="rounded-lg border bg-hymn-card text-card-foreground shadow-sm hymn-card-hover cursor-pointer border-border/50"
+      className="relative rounded-lg border bg-hymn-card text-card-foreground shadow-sm hymn-card-hover cursor-pointer border-border/50"
       onClick={onClick}
     >
       <div className="flex flex-col space-y-1.5 p-6 pb-3">
@@ -47,6 +61,16 @@ export function HymnCard({ hymn, onClick, searchTerm }: HymnCardProps) {
           {searchTerm ? highlightText(firstVerse, searchTerm) : firstVerse}
         </p>
       </div>
+      {!isMobile && (
+        <div className="absolute z-100 top-2 right-2 flex flex-row justify-end">
+          <button
+            onClick={handlePresentation}
+            className="cursor-pointer inline-flex items-center justify-center h-6 w-6 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
+          >
+            <Presentation className="h-3.5 w-3.5" />
+          </button>
+        </div>
+      )}
     </div>
   )
 }

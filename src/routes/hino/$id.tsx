@@ -1,9 +1,13 @@
 import { HymnViewer } from '@/components/HymnViewer'
 import { hymnsData } from '@/lib/hymns-data'
-import { createFileRoute, notFound } from '@tanstack/react-router'
+import { createFileRoute, notFound, stripSearchParams } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/hino/$id')({
   component: HymnDetails,
+  validateSearch: (search: Record<string, boolean | undefined>) => ({
+    isPresenting: search.isPresenting,
+  }),
+  loaderDeps: ({ search }) => ({ isPresenting: search.isPresenting }),
   loader: ({ params: { id } }) => {
     const hymn = hymnsData.find((hymn) => hymn.numero === Number(id))
     if (!hymn) throw notFound()
@@ -13,10 +17,11 @@ export const Route = createFileRoute('/hino/$id')({
 
 function HymnDetails() {
   const { hymn } = Route.useLoaderData()
+  const { isPresenting } = Route.useSearch()
   return (
     <div className="min-h-screen bg-hymn-bg theme-transition">
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <HymnViewer hymn={hymn} />
+      <div className="container">
+        <HymnViewer hymn={hymn} isDefaultPresenting={isPresenting} />
       </div>
     </div>
   )

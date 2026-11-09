@@ -1,14 +1,20 @@
-import { useState } from 'react'
+import { useIsMobile } from '@/hooks/use-mobile'
 import { Hymn } from '@/lib/hymns-data'
-import { ArrowLeft, Minus, Plus } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useNavigate } from '@tanstack/react-router'
+import { ArrowLeft, Minus, Plus, Presentation } from 'lucide-react'
+import { useState } from 'react'
+import { HymnPresentation } from './HymnPresentation'
 
 interface HymnViewerProps {
   hymn: Hymn
+  isDefaultPresenting?: boolean
 }
 
-export function HymnViewer({ hymn }: HymnViewerProps) {
+export function HymnViewer({ hymn, isDefaultPresenting = false }: HymnViewerProps) {
   const [fontSize, setFontSize] = useState(16)
+  const isMobile = useIsMobile()
+  const [isPresenting, setIsPresenting] = useState(isDefaultPresenting)
 
   const increaseFontSize = () => {
     setFontSize((prev) => Math.min(prev + 2, 28))
@@ -18,8 +24,19 @@ export function HymnViewer({ hymn }: HymnViewerProps) {
     setFontSize((prev) => Math.max(prev - 2, 12))
   }
 
+  const handlePresentation = () => {
+    setIsPresenting(true)
+  }
+
+  if (isPresenting)
+    return (
+      <div className="flex flex-col min-h-screen py-8">
+        <HymnPresentation hymn={hymn} onClose={() => setIsPresenting(false)} />
+      </div>
+    )
+
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in mx-auto px-4 py-8 max-w-4xl">
       <div className="select-none flex items-center justify-between mb-6">
         <button
           onClick={() => window.history.back()}
@@ -44,6 +61,14 @@ export function HymnViewer({ hymn }: HymnViewerProps) {
           >
             <Plus className="h-4 w-4" />
           </button>
+          {!isMobile && (
+            <button
+              onClick={handlePresentation}
+              className="cursor-pointer inline-flex items-center justify-center h-10 w-10 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
+            >
+              <Presentation className="h-4 w-4" />
+            </button>
+          )}
         </div>
       </div>
 
@@ -63,16 +88,18 @@ export function HymnViewer({ hymn }: HymnViewerProps) {
             {hymn.estrofes.map((estrofe, index) => (
               <div key={index} className="verse">
                 <div className="text-hymn-text leading-relaxed whitespace-pre-line">
-                  {estrofe.map((line, lineIndex) => (
-                    <div
-                      key={lineIndex}
-                      className={cn('verse-line', {
-                        italic: line.italico,
-                      })}
-                    >
-                      {line.texto}
-                    </div>
-                  ))}
+                  {estrofe
+                    .filter((line) => !line.hideFromNormalView)
+                    .map((line, lineIndex) => (
+                      <div
+                        key={lineIndex}
+                        className={cn('verse-line', {
+                          italic: line.italico,
+                        })}
+                      >
+                        {line.texto}
+                      </div>
+                    ))}
                 </div>
               </div>
             ))}
