@@ -20,9 +20,7 @@ function HymnDetails() {
   const { isPresenting } = Route.useSearch()
   return (
     <div className="min-h-screen bg-hymn-bg theme-transition">
-      <div className="container">
-        <HymnViewer hymn={hymn} isDefaultPresenting={isPresenting} />
-      </div>
+      <HymnViewer hymn={hymn} isDefaultPresenting={isPresenting} />
     </div>
   )
 }

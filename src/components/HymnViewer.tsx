@@ -30,13 +30,13 @@ export function HymnViewer({ hymn, isDefaultPresenting = false }: HymnViewerProp
 
   if (isPresenting)
     return (
-      <div className="flex flex-col min-h-screen py-8">
+      <div className="flex flex-col min-h-screen px-4 py-8">
         <HymnPresentation hymn={hymn} onClose={() => setIsPresenting(false)} />
       </div>
     )
 
   return (
-    <div className="animate-fade-in mx-auto px-4 py-8 max-w-4xl">
+    <div className="animate-fade-in container mx-auto px-4 py-8 max-w-4xl">
       <div className="select-none flex items-center justify-between mb-6">
         <button
           onClick={() => window.history.back()}
