@@ -1,12 +1,14 @@
 export interface Estrofe {
   texto: string
   italico: boolean
+  hideFromNormalView?: boolean
 }
 
 export interface Hymn {
   id: number
   numero: number
   titulo: string
+  presentationOrder?: number[]
   estrofes: Estrofe[][]
 }
 
@@ -15,6 +17,7 @@ export const hymnsData: Hymn[] = [
     id: 1,
     numero: 1,
     titulo: 'ESTAMOS MUITO ALEGRES',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         {
@@ -38,6 +41,7 @@ export const hymnsData: Hymn[] = [
     id: 2,
     numero: 2,
     titulo: 'VEM LOUVAR',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Hoje é tempo de louvar a Deus', italico: false },
@@ -69,6 +73,7 @@ export const hymnsData: Hymn[] = [
     id: 3,
     numero: 3,
     titulo: 'JESUS CRISTO SATISFAZ',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Oh! Jesus Cristo satisfaz', italico: false },
@@ -91,6 +96,7 @@ export const hymnsData: Hymn[] = [
     id: 4,
     numero: 4,
     titulo: 'A TUA PRESENÇA',
+    presentationOrder: [0, 1, 0],
     estrofes: [
       [
         { texto: 'Senhor, eu quero sentir', italico: true },
@@ -109,6 +115,7 @@ export const hymnsData: Hymn[] = [
     id: 5,
     numero: 5,
     titulo: 'NUMA SÓ VOZ',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Um sorriso se abrindo no olhar', italico: false },
@@ -137,6 +144,7 @@ export const hymnsData: Hymn[] = [
     id: 6,
     numero: 6,
     titulo: 'CANTANDO ALEGRE',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Estou cantando alegre', italico: false },
@@ -162,6 +170,7 @@ export const hymnsData: Hymn[] = [
     id: 7,
     numero: 7,
     titulo: 'SATISFAÇÃO',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'Satisfação é ter a Cristo!', italico: false },
@@ -198,6 +207,7 @@ export const hymnsData: Hymn[] = [
     id: 8,
     numero: 8,
     titulo: 'DEUS É PAI',
+    presentationOrder: [0, 1, 0, 2, 0],
     estrofes: [
       [
         { texto: 'Deus é Pai! Sim, Deus é Pai', italico: true },
@@ -226,6 +236,7 @@ export const hymnsData: Hymn[] = [
     id: 9,
     numero: 9,
     titulo: 'ESTA PAZ',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'Esta paz que sinto em minha alma', italico: false },
@@ -265,6 +276,7 @@ export const hymnsData: Hymn[] = [
     id: 10,
     numero: 10,
     titulo: 'SOU FELIZ',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Sou feliz, mui feliz!', italico: false },
@@ -287,6 +299,7 @@ export const hymnsData: Hymn[] = [
     id: 11,
     numero: 11,
     titulo: 'DEUS FIEL',
+    presentationOrder: [0],
     estrofes: [
       [
         { texto: 'Deus fiel, Deus fiel!', italico: false },
@@ -300,6 +313,7 @@ export const hymnsData: Hymn[] = [
     id: 12,
     numero: 12,
     titulo: 'GRANDES COISAS',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         {
@@ -330,6 +344,7 @@ export const hymnsData: Hymn[] = [
     id: 13,
     numero: 13,
     titulo: 'MEU CORAÇÃO TRANSBORDA',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Meu coração transborda de amor', italico: false },
@@ -348,6 +363,7 @@ export const hymnsData: Hymn[] = [
     id: 14,
     numero: 14,
     titulo: 'TUDO COOPERA',
+    presentationOrder: [0, 1, 0, 2, 0],
     estrofes: [
       [
         { texto: 'Tudo coopera para o bem', italico: true },
@@ -373,6 +389,7 @@ export const hymnsData: Hymn[] = [
     id: 15,
     numero: 15,
     titulo: 'TE AGRADEÇO',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Por tudo o que tens feito,', italico: false },
@@ -399,6 +416,7 @@ export const hymnsData: Hymn[] = [
     id: 16,
     numero: 16,
     titulo: 'RENDEI GRAÇAS',
+    presentationOrder: [0, 1, 0],
     estrofes: [
       [
         { texto: 'Rendei graças ao Senhor,', italico: true },
@@ -420,6 +438,7 @@ export const hymnsData: Hymn[] = [
     id: 17,
     numero: 17,
     titulo: 'EXALTADO',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Exaltado, exaltado', italico: true },
@@ -438,6 +457,7 @@ export const hymnsData: Hymn[] = [
     id: 18,
     numero: 18,
     titulo: 'DIGNO DE GLÓRIA',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Digno de glória e honra', italico: false },
@@ -460,6 +480,7 @@ export const hymnsData: Hymn[] = [
     id: 19,
     numero: 19,
     titulo: 'MINHA FORÇA',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'O Senhor é a minha força', italico: true },
@@ -484,6 +505,7 @@ export const hymnsData: Hymn[] = [
     id: 20,
     numero: 20,
     titulo: 'Ó, LOUVAI A DEUS',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Ó, louvai a Deus comigo', italico: false },
@@ -508,6 +530,7 @@ export const hymnsData: Hymn[] = [
     id: 21,
     numero: 21,
     titulo: 'TU ÉS SOBERANO',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Tu és Soberano sobre a terra,', italico: false },
@@ -532,6 +555,7 @@ export const hymnsData: Hymn[] = [
     id: 22,
     numero: 22,
     titulo: 'QUÃO FORMOSO ÉS',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Quão Formoso és, Rei do universo', italico: true },
@@ -568,6 +592,7 @@ export const hymnsData: Hymn[] = [
     id: 23,
     numero: 23,
     titulo: 'ME AMASTE',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Sendo eu pecador, Tu me amaste', italico: false },
@@ -596,6 +621,7 @@ export const hymnsData: Hymn[] = [
     id: 24,
     numero: 24,
     titulo: 'NOVA VIDA',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'Romperam-se as cadeias,', italico: false },
@@ -635,6 +661,7 @@ export const hymnsData: Hymn[] = [
     id: 25,
     numero: 25,
     titulo: 'GRANDE FARDO',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Grande fardo de pecados meus', italico: false },
@@ -660,6 +687,7 @@ export const hymnsData: Hymn[] = [
     id: 26,
     numero: 26,
     titulo: 'DONO DO MEU CORAÇÃO',
+    presentationOrder: [0, 1, 2, 1, 3, 1, 4, 1],
     estrofes: [
       [
         { texto: 'Rei do universo, Te dou meu louvor', italico: false },
@@ -738,6 +766,7 @@ export const hymnsData: Hymn[] = [
     id: 27,
     numero: 27,
     titulo: 'DEUS, CRIA EM MIM',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         {
@@ -769,6 +798,7 @@ export const hymnsData: Hymn[] = [
     id: 28,
     numero: 28,
     titulo: 'RENOVA-ME',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Renova-me, Senhor Jesus', italico: false },
@@ -789,6 +819,7 @@ export const hymnsData: Hymn[] = [
     id: 29,
     numero: 29,
     titulo: 'VASO NOVO',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Eu quero ser, Senhor amado,', italico: false },
@@ -809,6 +840,7 @@ export const hymnsData: Hymn[] = [
     id: 30,
     numero: 30,
     titulo: 'FALA COMIGO',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         {
@@ -837,6 +869,7 @@ export const hymnsData: Hymn[] = [
     id: 31,
     numero: 31,
     titulo: 'POUCO A POUCO',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Pouco a pouco, cada dia', italico: false },
@@ -861,6 +894,7 @@ export const hymnsData: Hymn[] = [
     id: 32,
     numero: 32,
     titulo: 'SONDA-ME, Ó DEUS',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         {
@@ -916,6 +950,7 @@ export const hymnsData: Hymn[] = [
     id: 33,
     numero: 33,
     titulo: 'SE CONFESSARMOS',
+    presentationOrder: [0],
     estrofes: [
       [
         { texto: 'Se confessarmos os nossos pecados,', italico: false },
@@ -929,6 +964,7 @@ export const hymnsData: Hymn[] = [
     id: 34,
     numero: 34,
     titulo: 'BUSCAI PRIMEIRO',
+    presentationOrder: [0, 2, 3, 1],
     estrofes: [
       [
         { texto: 'Buscai primeiro o reino de Deus', italico: false },
@@ -939,12 +975,20 @@ export const hymnsData: Hymn[] = [
       ],
       [{ texto: 'Aleluia! (5x)', italico: true }],
       [
+        { texto: 'MULHERES:', italico: false, hideFromNormalView: true },
+        { texto: 'Aleluia! (5x)', italico: true, hideFromNormalView: true },
+        { texto: 'ㅤ', italico: false, hideFromNormalView: true },
+        { texto: 'HOMENS:', italico: false, hideFromNormalView: true },
         { texto: 'Nem só de pão o homem viverá', italico: false },
         { texto: 'Mas de toda Palavra', italico: false },
         { texto: 'Que procede da boca de Deus', italico: false },
         { texto: 'Aleluia! Aleluia!', italico: false },
       ],
       [
+        { texto: 'HOMENS:', italico: false, hideFromNormalView: true },
+        { texto: 'Aleluia! (5x)', italico: true, hideFromNormalView: true },
+        { texto: 'ㅤ', italico: false, hideFromNormalView: true },
+        { texto: 'MULHERES:', italico: false, hideFromNormalView: true },
         { texto: 'Pedi, pedi e dar-se-vos-á', italico: false },
         { texto: 'Buscai e encontrareis', italico: false },
         { texto: 'Batei, batei e abrir-se-vos-á', italico: false },
@@ -956,6 +1000,7 @@ export const hymnsData: Hymn[] = [
     id: 35,
     numero: 35,
     titulo: 'EM LOUVOR A TI, Ó SENHOR',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Que as palavras da minha boca', italico: false },
@@ -980,6 +1025,7 @@ export const hymnsData: Hymn[] = [
     id: 36,
     numero: 36,
     titulo: 'RENDE O CORAÇÃO',
+    presentationOrder: [0],
     estrofes: [
       [
         { texto: 'Rende o coração a Jesus Cristo já', italico: false },
@@ -996,6 +1042,7 @@ export const hymnsData: Hymn[] = [
     id: 37,
     numero: 37,
     titulo: 'LEMBRA-TE DO TEU CRIADOR',
+    presentationOrder: [0, 1, 0, 2, 0],
     estrofes: [
       [
         { texto: 'Lembra-te do Teu Criador! (3x)', italico: true },
@@ -1028,6 +1075,7 @@ export const hymnsData: Hymn[] = [
     id: 38,
     numero: 38,
     titulo: 'JESUS VIRÁ',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Um lindo dia almejo eu encontrar', italico: false },
@@ -1068,6 +1116,7 @@ export const hymnsData: Hymn[] = [
     id: 39,
     numero: 39,
     titulo: 'VIRÃO TE LOUVAR',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'De todas as tribos, povos e raças,', italico: false },
@@ -1114,6 +1163,7 @@ export const hymnsData: Hymn[] = [
     id: 40,
     numero: 40,
     titulo: 'PARA QUE O MUNDO CREIA',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         {
@@ -1159,6 +1209,7 @@ export const hymnsData: Hymn[] = [
     id: 41,
     numero: 41,
     titulo: 'DEUS AMOU O MUNDO',
+    presentationOrder: [0, 1, 0],
     estrofes: [
       [
         { texto: 'Deus amou o mundo de tal maneira', italico: true },
@@ -1183,6 +1234,7 @@ export const hymnsData: Hymn[] = [
     id: 42,
     numero: 42,
     titulo: 'COMPROMISSO',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         {
@@ -1209,6 +1261,7 @@ export const hymnsData: Hymn[] = [
     id: 43,
     numero: 43,
     titulo: 'IDE E PREGAI',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Ide e pregai, ide com fé!', italico: false },
@@ -1228,6 +1281,7 @@ export const hymnsData: Hymn[] = [
     id: 44,
     numero: 44,
     titulo: 'QUEM QUER AJUDAR',
+    presentationOrder: [0, 1, 0, 2, 0],
     estrofes: [
       [
         { texto: 'É grande a seara', italico: true },
@@ -1262,6 +1316,7 @@ export const hymnsData: Hymn[] = [
     id: 45,
     numero: 45,
     titulo: 'TEU POVO',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'É o Teu povo aqui presente,', italico: false },
@@ -1284,6 +1339,7 @@ export const hymnsData: Hymn[] = [
     id: 46,
     numero: 46,
     titulo: 'SÓ EM JESUS',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Só em Jesus, meu Redentor,', italico: false },
@@ -1321,6 +1377,7 @@ export const hymnsData: Hymn[] = [
     id: 47,
     numero: 47,
     titulo: 'AO ÚNICO',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Ao Único que é digno de receber', italico: false },
@@ -1349,6 +1406,7 @@ export const hymnsData: Hymn[] = [
     id: 48,
     numero: 48,
     titulo: 'CONQUISTOU MEU CORAÇÃO',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'Tu que estás entronizado', italico: false },
@@ -1390,6 +1448,7 @@ export const hymnsData: Hymn[] = [
     id: 49,
     numero: 49,
     titulo: 'TUA VISÃO',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Tua visão pra minha vida', italico: false },
@@ -1406,10 +1465,14 @@ export const hymnsData: Hymn[] = [
           texto: 'Somente uma motivação de Te agradar',
           italico: false,
         },
+        {
+          texto: '(2x)',
+          italico: false,
+        },
       ],
       [
-        { texto: 'Limpa o meu coração neste mundo mal', italico: true },
-        { texto: 'Ensina-me a viver Teu reino aqui', italico: true },
+        { texto: 'Limpa o meu coração neste mundo mal', italico: false },
+        { texto: 'Ensina-me a viver Teu reino aqui', italico: false },
         { texto: 'Tu me deste Tua Vida', italico: true },
         { texto: 'Pra que eu não viva mais pra mim', italico: true },
         { texto: 'Olhar somente a Ti', italico: true },
@@ -1422,6 +1485,7 @@ export const hymnsData: Hymn[] = [
     id: 50,
     numero: 50,
     titulo: 'NADA IGUAL',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Porque desde a antiguidade,', italico: false },
@@ -1453,6 +1517,7 @@ export const hymnsData: Hymn[] = [
     id: 51,
     numero: 51,
     titulo: 'GLÓRIA PRA SEMPRE',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Glória pra sempre', italico: false },
@@ -1480,6 +1545,7 @@ export const hymnsData: Hymn[] = [
     id: 52,
     numero: 52,
     titulo: 'DEZ MIL RAZÕES',
+    presentationOrder: [0, 1, 0, 2, 0, 3, 0],
     estrofes: [
       [
         { texto: 'Minha alma canta a Ti!', italico: true },
@@ -1518,6 +1584,7 @@ export const hymnsData: Hymn[] = [
     id: 53,
     numero: 53,
     titulo: 'RAZÃO DE VIVER',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         {
@@ -1569,6 +1636,7 @@ export const hymnsData: Hymn[] = [
     id: 54,
     numero: 54,
     titulo: 'DOU GRAÇAS DE CORAÇÃO',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Dou graças de coração,', italico: true },
@@ -1597,6 +1665,7 @@ export const hymnsData: Hymn[] = [
     id: 55,
     numero: 55,
     titulo: 'ANDAM PROCURANDO',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Andam procurando a razão de viver', italico: false },
@@ -1627,6 +1696,7 @@ export const hymnsData: Hymn[] = [
     id: 56,
     numero: 56,
     titulo: 'EU TE LOUVAREI',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Eu Te louvarei, Senhor,', italico: true },
@@ -1644,6 +1714,7 @@ export const hymnsData: Hymn[] = [
     id: 57,
     numero: 57,
     titulo: 'VAMOS ADORAR',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Vamos adorar a Deus! (2x)', italico: false },
@@ -1664,6 +1735,7 @@ export const hymnsData: Hymn[] = [
     id: 58,
     numero: 58,
     titulo: 'OS QUE ESPERAM NO SENHOR',
+    presentationOrder: [0, 1, 0, 2, 0],
     estrofes: [
       [
         { texto: 'Os que esperam no Senhor', italico: true },
@@ -1689,6 +1761,7 @@ export const hymnsData: Hymn[] = [
     id: 59,
     numero: 59,
     titulo: 'ENTÃO SE VERÁ',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Então se verá o Filho do homem', italico: true },
@@ -1710,6 +1783,7 @@ export const hymnsData: Hymn[] = [
     id: 60,
     numero: 60,
     titulo: 'ALTO PREÇO',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Eu sei que foi pago um alto preço', italico: false },
@@ -1748,6 +1822,7 @@ export const hymnsData: Hymn[] = [
     id: 61,
     numero: 61,
     titulo: 'O MEU LOUVOR É FRUTO',
+    presentationOrder: [0, 1, 0, 2, 0],
     estrofes: [
       [
         { texto: 'O meu louvor é fruto', italico: true },
@@ -1788,6 +1863,7 @@ export const hymnsData: Hymn[] = [
     id: 62,
     numero: 62,
     titulo: 'QUEM NOS SEPARARÁ',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         {
@@ -1837,6 +1913,7 @@ export const hymnsData: Hymn[] = [
     id: 63,
     numero: 63,
     titulo: 'PORQUE ELE VIVE',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Deus enviou seu Filho amado', italico: false },
@@ -1873,6 +1950,7 @@ export const hymnsData: Hymn[] = [
     id: 64,
     numero: 64,
     titulo: 'REI DAS NAÇÕES',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Grandes são as Tuas obras,', italico: false },
@@ -1904,6 +1982,7 @@ export const hymnsData: Hymn[] = [
     id: 65,
     numero: 65,
     titulo: 'TUDO ELE É PRA MIM',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'Nas estrelas vejo a Sua mão', italico: false },
@@ -1935,6 +2014,7 @@ export const hymnsData: Hymn[] = [
     id: 66,
     numero: 66,
     titulo: 'CELEBRAI COM JÚBILO',
+    presentationOrder: [0],
     estrofes: [
       [
         { texto: 'Celebrai, com júbilo, ao Senhor', italico: false },
@@ -1956,6 +2036,7 @@ export const hymnsData: Hymn[] = [
     id: 67,
     numero: 67,
     titulo: 'VITÓRIA EM CRISTO',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Ouvi contar a história', italico: false },
@@ -1995,6 +2076,7 @@ export const hymnsData: Hymn[] = [
     id: 68,
     numero: 68,
     titulo: 'NOVOS CAMINHOS',
+    presentationOrder: [0, 1, 2, 0, 1, 3, 0, 1],
     estrofes: [
       [
         { texto: 'Novos caminhos (novos caminhos)', italico: true },
@@ -2034,6 +2116,7 @@ export const hymnsData: Hymn[] = [
     id: 69,
     numero: 69,
     titulo: 'ADORAI EM MAJESTADE',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Adorai em majestade,', italico: false },
@@ -2062,6 +2145,7 @@ export const hymnsData: Hymn[] = [
     id: 70,
     numero: 70,
     titulo: 'NOSSO DEUS É SOBERANO',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Nosso Deus é Soberano', italico: true },
@@ -2100,6 +2184,7 @@ export const hymnsData: Hymn[] = [
     id: 71,
     numero: 71,
     titulo: 'AMIGO DE DEUS',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Não existe nada melhor', italico: false },
@@ -2120,6 +2205,7 @@ export const hymnsData: Hymn[] = [
     id: 72,
     numero: 72,
     titulo: 'SÓ O PODER DE DEUS',
+    presentationOrder: [0],
     estrofes: [
       [
         { texto: 'Só o poder de Deus', italico: false },
@@ -2137,6 +2223,7 @@ export const hymnsData: Hymn[] = [
     id: 73,
     numero: 73,
     titulo: 'SALMO 96',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Cantai ao Senhor um cântico novo', italico: false },
@@ -2174,6 +2261,7 @@ export const hymnsData: Hymn[] = [
     id: 74,
     numero: 74,
     titulo: 'SANTO LUGAR',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Há de ter um lugar', italico: false },
@@ -2215,6 +2303,7 @@ export const hymnsData: Hymn[] = [
     id: 75,
     numero: 75,
     titulo: 'AO NOSSO DEUS',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         {
@@ -2238,6 +2327,7 @@ export const hymnsData: Hymn[] = [
     id: 76,
     numero: 76,
     titulo: 'JESUS CRISTO MUDOU MEU VIVER',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Jesus Cristo mudou meu viver! (2x)', italico: true },
@@ -2268,6 +2358,7 @@ export const hymnsData: Hymn[] = [
     id: 77,
     numero: 77,
     titulo: 'NÃO HÁ DEUS MAIOR',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Não há Deus maior!', italico: true },
@@ -2293,6 +2384,7 @@ export const hymnsData: Hymn[] = [
     id: 78,
     numero: 78,
     titulo: 'SEJA ENGRANDECIDO',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Seja engrandecido,', italico: false },
@@ -2319,6 +2411,7 @@ export const hymnsData: Hymn[] = [
     id: 79,
     numero: 79,
     titulo: 'PURO E SANTO',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Puro e santo quero ser', italico: false },
@@ -2340,6 +2433,7 @@ export const hymnsData: Hymn[] = [
     id: 80,
     numero: 80,
     titulo: 'DOCE NOME',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         {
@@ -2366,6 +2460,7 @@ export const hymnsData: Hymn[] = [
     id: 81,
     numero: 81,
     titulo: 'CÂNTICO DA COLHEITA',
+    presentationOrder: [1, 2, 3],
     estrofes: [
       [
         {
@@ -2374,6 +2469,11 @@ export const hymnsData: Hymn[] = [
         },
       ],
       [
+        {
+          texto: 'Paraparaparara parapapara parapapararara',
+          italico: true,
+          hideFromNormalView: true,
+        },
         {
           texto: 'Lembra que o Senhor uma vez nos falou',
           italico: false,
@@ -2403,6 +2503,11 @@ export const hymnsData: Hymn[] = [
         { texto: 'E a nossa língua de júbilo', italico: true },
         { texto: 'Nossa colheita tem sido abundante', italico: true },
         { texto: 'Cumpriu-se a palavra de Deus!', italico: true },
+        {
+          texto: 'Paraparaparara parapapara parapapararara',
+          italico: true,
+          hideFromNormalView: true,
+        },
       ],
       [
         {
@@ -2416,6 +2521,7 @@ export const hymnsData: Hymn[] = [
     id: 82,
     numero: 82,
     titulo: 'SANTIFICAÇÃO',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         {
@@ -2459,6 +2565,7 @@ export const hymnsData: Hymn[] = [
     id: 83,
     numero: 83,
     titulo: 'DIANTE DO TRONO DE DEUS',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Diante do trono de Deus nos céus', italico: false },
@@ -2496,6 +2603,7 @@ export const hymnsData: Hymn[] = [
     id: 84,
     numero: 84,
     titulo: 'ELE É EXALTADO',
+    presentationOrder: [0, 1, 3],
     estrofes: [
       [
         {
@@ -2530,6 +2638,7 @@ export const hymnsData: Hymn[] = [
     id: 85,
     numero: 85,
     titulo: 'JESUS, EM TUA PRESENÇA',
+    presentationOrder: [0, 1, 0, 2, 0],
     estrofes: [
       [
         { texto: 'Só pra Te adorar!', italico: true },
@@ -2565,6 +2674,7 @@ export const hymnsData: Hymn[] = [
     id: 86,
     numero: 86,
     titulo: 'SEMPRE A TI EU GRAÇAS DOU',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Aqui diante de Ti,', italico: false },
@@ -2601,6 +2711,7 @@ export const hymnsData: Hymn[] = [
     id: 87,
     numero: 87,
     titulo: 'CELEBRAÇÃO',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'É tempo de celebrar!', italico: false },
@@ -2640,6 +2751,7 @@ export const hymnsData: Hymn[] = [
     id: 88,
     numero: 88,
     titulo: 'LOGO DE MANHÃ',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Logo de manhã, quero Te buscar', italico: true },
@@ -2677,6 +2789,7 @@ export const hymnsData: Hymn[] = [
     id: 89,
     numero: 89,
     titulo: 'VIM PARA ADORAR-TE',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'Luz do mundo, vieste à Terra', italico: false },
@@ -2706,6 +2819,7 @@ export const hymnsData: Hymn[] = [
       [
         { texto: 'Eu nunca saberei o preço', italico: false },
         { texto: 'dos meus pecados lá na cruz...', italico: false },
+        { texto: '(2x)', italico: false },
       ],
     ],
   },
@@ -2713,6 +2827,7 @@ export const hymnsData: Hymn[] = [
     id: 90,
     numero: 90,
     titulo: 'DEUS É FIEL',
+    presentationOrder: [0, 1, 0, 2, 0, 3, 0],
     estrofes: [
       [
         { texto: 'Deus é fiel, é fiel!', italico: true },
@@ -2753,6 +2868,7 @@ export const hymnsData: Hymn[] = [
     id: 91,
     numero: 91,
     titulo: 'VEM DE TI, SENHOR',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'Não tenho palavras', italico: false },
@@ -2799,6 +2915,7 @@ export const hymnsData: Hymn[] = [
     id: 92,
     numero: 92,
     titulo: 'CALMO, SERENO E TRANQUILO',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Calmo, sereno e tranquilo', italico: false },
@@ -2824,6 +2941,7 @@ export const hymnsData: Hymn[] = [
     id: 93,
     numero: 93,
     titulo: 'SE ISSO NÃO FOR AMOR',
+    presentationOrder: [0, 1, 0, 2, 0],
     estrofes: [
       [
         { texto: 'Deixou o esplendor de Sua glória', italico: false },
@@ -2859,6 +2977,7 @@ export const hymnsData: Hymn[] = [
     id: 94,
     numero: 94,
     titulo: 'CONSAGRAÇÃO',
+    presentationOrder: [0, 1, 2, 3, 4],
     estrofes: [
       [
         {
@@ -2910,6 +3029,7 @@ export const hymnsData: Hymn[] = [
     id: 95,
     numero: 95,
     titulo: 'A TUA PALAVRA',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'A Tua palavra escondi', italico: false },
@@ -2944,6 +3064,7 @@ export const hymnsData: Hymn[] = [
     id: 96,
     numero: 96,
     titulo: 'POR AMOR',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Por amor Deus se revelou', italico: false },
@@ -2977,6 +3098,7 @@ export const hymnsData: Hymn[] = [
     id: 97,
     numero: 97,
     titulo: 'CRISTO VEM ME BUSCAR',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'Cristo vem me buscar!', italico: false },
@@ -3010,6 +3132,7 @@ export const hymnsData: Hymn[] = [
     id: 98,
     numero: 98,
     titulo: 'DIGNO É O SENHOR',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Pela cruz dou graças,', italico: false },
@@ -3036,6 +3159,7 @@ export const hymnsData: Hymn[] = [
     id: 99,
     numero: 99,
     titulo: 'NOS BRAÇOS DO MEU PAI',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         {
@@ -3088,6 +3212,7 @@ export const hymnsData: Hymn[] = [
     id: 100,
     numero: 100,
     titulo: 'MEU UNIVERSO',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Que sejas meu universo', italico: false },
@@ -3157,6 +3282,7 @@ export const hymnsData: Hymn[] = [
     id: 101,
     numero: 101,
     titulo: 'SEGUNDO A VONTADE DE DEUS',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'Não é minha vontade, mas é Tua;', italico: false },
@@ -3221,6 +3347,7 @@ export const hymnsData: Hymn[] = [
     id: 102,
     numero: 102,
     titulo: 'QUERO BUSCAR TEU CAMINHO',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Quero buscar Teu caminho, Senhor', italico: false },
@@ -3272,20 +3399,24 @@ export const hymnsData: Hymn[] = [
     id: 103,
     numero: 103,
     titulo: 'PERTO QUERO ESTAR',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
+        { texto: 'MULHERES:', italico: false },
         { texto: 'Perto quero estar,', italico: false },
         { texto: 'Junto aos Teus pés', italico: false },
         { texto: 'Pois prazer maior não há,', italico: false },
         { texto: 'Que me render e Te adorar.', italico: false },
       ],
       [
+        { texto: 'HOMENS:', italico: false },
         { texto: 'Tudo que há em mim', italico: false },
         { texto: 'Quero Te ofertar.', italico: false },
         { texto: 'Mas ainda é pouco, eu sei', italico: false },
         { texto: 'Se comparado ao que ganhei.', italico: false },
       ],
       [
+        { texto: 'TODOS:', italico: false },
         { texto: 'Não sou apenas servo,', italico: false },
         { texto: 'Teu amigo me tornei.', italico: false },
       ],
@@ -3305,6 +3436,7 @@ export const hymnsData: Hymn[] = [
     id: 104,
     numero: 104,
     titulo: 'PAZ ÀS NAÇÕES',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'Há muito ainda por fazer', italico: false },
@@ -3346,6 +3478,7 @@ export const hymnsData: Hymn[] = [
     id: 105,
     numero: 105,
     titulo: 'COMO UM MANANCIAL',
+    presentationOrder: [0, 1, 2, 3, 4, 2],
     estrofes: [
       [
         { texto: 'Homens:', italico: false },
@@ -3419,6 +3552,7 @@ export const hymnsData: Hymn[] = [
     id: 106,
     numero: 106,
     titulo: 'CONFIO EM TI',
+    presentationOrder: [0, 1, 2, 3, 4, 5],
     estrofes: [
       [
         { texto: 'Misteriosos feitos', italico: false },
@@ -3469,6 +3603,7 @@ export const hymnsData: Hymn[] = [
     id: 107,
     numero: 107,
     titulo: 'CRISTO SALVA',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         {
@@ -3529,6 +3664,7 @@ export const hymnsData: Hymn[] = [
     id: 108,
     numero: 108,
     titulo: 'MAPA DA MINA',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Todos buscam a felicidade,', italico: false },
@@ -3566,6 +3702,7 @@ export const hymnsData: Hymn[] = [
     id: 109,
     numero: 109,
     titulo: 'CONFIANÇA',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Sei que observas o meu coração', italico: false },
@@ -3594,6 +3731,7 @@ export const hymnsData: Hymn[] = [
     id: 110,
     numero: 110,
     titulo: 'ALIANÇA ETERNA',
+    presentationOrder: [0, 1, 2],
     estrofes: [
       [
         { texto: 'Eterna, infinita,', italico: false },
@@ -3636,6 +3774,7 @@ export const hymnsData: Hymn[] = [
     id: 111,
     numero: 111,
     titulo: 'ENTREGA',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Te dou meu coração', italico: false },
@@ -3664,6 +3803,7 @@ export const hymnsData: Hymn[] = [
     id: 112,
     numero: 112,
     titulo: 'EU IREI',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'Jesus nos chama a cumprir', italico: false },
@@ -3694,6 +3834,7 @@ export const hymnsData: Hymn[] = [
     id: 113,
     numero: 113,
     titulo: 'VEM ME DIRIGIR',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'Quero buscar e pedir ao Senhor', italico: false },
@@ -3725,6 +3866,7 @@ export const hymnsData: Hymn[] = [
     id: 114,
     numero: 114,
     titulo: 'MEU LAR',
+    presentationOrder: [0, 1, 2, 3, 4, 2, 5, 2],
     estrofes: [
       [
         { texto: 'Sou estrangeiro e estou', italico: false },
@@ -3781,6 +3923,7 @@ export const hymnsData: Hymn[] = [
     id: 115,
     numero: 115,
     titulo: 'VENCEDOR A CADA DIA',
+    presentationOrder: [0, 1, 2, 3, 4, 2, 5],
     estrofes: [
       [
         { texto: 'Há caminhos que parecem', italico: false },
@@ -3837,6 +3980,7 @@ export const hymnsData: Hymn[] = [
     id: 116,
     numero: 116,
     titulo: 'REUNIÃO NO AR',
+    presentationOrder: [0, 1],
     estrofes: [
       [
         { texto: 'Haverá no ar', italico: false },
@@ -3858,6 +4002,7 @@ export const hymnsData: Hymn[] = [
     id: 117,
     numero: 117,
     titulo: 'LOUVORES A DEUS',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'Louvores a Deus, mui sinceros louvores,', italico: false },
@@ -3889,6 +4034,7 @@ export const hymnsData: Hymn[] = [
     id: 118,
     numero: 118,
     titulo: 'COMUNHÃO E ADORAÇÃO',
+    presentationOrder: [0, 1, 2, 3, 1, 2],
     estrofes: [
       [
         { texto: 'Hoje estamos reunidos para louvar ao Senhor', italico: false },
@@ -3917,6 +4063,7 @@ export const hymnsData: Hymn[] = [
     id: 119,
     numero: 119,
     titulo: 'SENÃO PRA TE ADORAR',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'Pela Tua mão criado,', italico: false },
@@ -3965,6 +4112,7 @@ export const hymnsData: Hymn[] = [
     id: 120,
     numero: 120,
     titulo: 'TU ME SUSTERÁS',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'Teus caminhos, ó Deus, são mais altos que os meus.', italico: false },
@@ -3994,6 +4142,7 @@ export const hymnsData: Hymn[] = [
     id: 121,
     numero: 121,
     titulo: 'MEU CORAÇÃO DESCANSA EM DEUS',
+    presentationOrder: [0, 1, 2, 1, 3, 1, 4, 1],
     estrofes: [
       [
         { texto: 'Meu coração descansa em Deus, que não me deixará', italico: false },
@@ -4021,6 +4170,7 @@ export const hymnsData: Hymn[] = [
     id: 122,
     numero: 122,
     titulo: 'ESTA É NOSSA MISSÃO',
+    presentationOrder: [0, 1, 2, 1, 3, 1],
     estrofes: [
       [
         { texto: 'Vamos proclamar de Cristo nesta terra do Brasil,', italico: false },
@@ -4052,6 +4202,7 @@ export const hymnsData: Hymn[] = [
     id: 123,
     numero: 123,
     titulo: 'EM DEFESA DA FÉ',
+    presentationOrder: [0, 1, 2, 1],
     estrofes: [
       [
         { texto: 'O Evangelho de Cristo vivei,', italico: false },
@@ -4089,6 +4240,7 @@ export const hymnsData: Hymn[] = [
     id: 124,
     numero: 124,
     titulo: 'EM COMUNHÃO',
+    presentationOrder: [0, 1, 2, 3, 4, 5, 6, 7],
     estrofes: [
       [
         { texto: 'Em comunhão quero viver', italico: false },
@@ -4154,6 +4306,7 @@ export const hymnsData: Hymn[] = [
     id: 125,
     numero: 125,
     titulo: 'QUEM SOMOS NÓS',
+    presentationOrder: [0, 1, 2, 3, 4, 5, 6],
     estrofes: [
       [
         { texto: 'Quem somos nós neste mundo aqui', italico: false },
@@ -4203,6 +4356,7 @@ export const hymnsData: Hymn[] = [
     id: 126,
     numero: 126,
     titulo: 'UNIDADE',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'De modo digno da vocação,', italico: false },
@@ -4244,6 +4398,7 @@ export const hymnsData: Hymn[] = [
     id: 127,
     numero: 127,
     titulo: 'POR SUA CRUZ',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'A Lei que condenava aboliu', italico: false },
@@ -4291,6 +4446,7 @@ export const hymnsData: Hymn[] = [
     id: 128,
     numero: 128,
     titulo: 'MEDLEY INFANTIL 2025',
+    presentationOrder: [0, 1, 2, 3],
     estrofes: [
       [
         { texto: 'Quem fez você e eu?', italico: false },
@@ -4327,59 +4483,60 @@ export const hymnsData: Hymn[] = [
     id: 129,
     numero: 129,
     titulo: 'BÍBLIA NÃO PASSARÁ',
+    presentationOrder: [0, 1, 2, 3, 4, 5, 6],
     estrofes: [
       [
         { texto: 'Alguns chamam de mito', italico: false },
-        { texto: 'Ou de um livro a mais qualquer,​', italico: false },
-        { texto: 'Mas a Bíblia eles não abalarão.​', italico: false },
-        { texto: 'Pois seu Autor Divino​', italico: false },
-        { texto: 'Não a deixará falhar,​', italico: false },
-        { texto: 'Cada sílaba por fim se cumprirá.​', italico: false },
+        { texto: 'Ou de um livro a mais qualquer,', italico: false },
+        { texto: 'Mas a Bíblia eles não abalarão.', italico: false },
+        { texto: 'Pois seu Autor Divino', italico: false },
+        { texto: 'Não a deixará falhar,', italico: false },
+        { texto: 'Cada sílaba por fim se cumprirá.', italico: false },
       ],
       [
         { texto: 'De pé está e ficará;', italico: true },
         { texto: 'Cada palavra que escrita está.', italico: true },
-        { texto: 'Mesmo que os homens​', italico: true },
-        { texto: 'desistam de crer,', italico: true },
-        { texto: 'Terra e céus hão de passar', italico: true },
-        { texto: 'Mas a Bíblia não passará.​', italico: true },
-      ],
-      [
-        { texto: 'Alguns até queimaram​', italico: false },
-        { texto: 'Ao tentarem encobrir,​', italico: false },
-        { texto: 'A mensagem que nos deu o Criador.​', italico: false },
-        { texto: 'Porém, milhões já creram,​', italico: false },
-        { texto: 'Outros mais virão a crer​', italico: false },
-        { texto: 'E o propósito de Deus triunfará.​', italico: false },
-      ],
-      [
-        { texto: 'De pé está e ficará;', italico: true },
-        { texto: 'Cada palavra que escrita está.', italico: true },
-        { texto: 'Mesmo que os homens​', italico: true },
-        { texto: 'desistam de crer,', italico: true },
-        { texto: 'Terra e céus hão de passar', italico: true },
-        { texto: 'Mas a Bíblia não passará.​', italico: true },
-      ],
-      [
-        { texto: 'E os homens tão confusos ​', italico: false },
-        { texto: 'Hoje buscam uma luz​', italico: false },
-        { texto: 'Que somente a verdade nos conduz,​', italico: false },
-        { texto: 'E existe uma esperança', italico: false },
-        { texto: 'Todos podem encontrar​', italico: false },
-        { texto: 'Vida eterna nas palavras de Jesus.​', italico: false },
-      ],
-      [
-        { texto: 'De pé está e ficará;', italico: true },
-        { texto: 'Cada palavra que escrita está.', italico: true },
-        { texto: 'Mesmo que os homens​', italico: true },
+        { texto: 'Mesmo que os homens', italico: true },
         { texto: 'desistam de crer,', italico: true },
         { texto: 'Terra e céus hão de passar', italico: true },
         { texto: 'Mas a Bíblia não passará.', italico: true },
-        { texto: '(2x)​', italico: true },
       ],
       [
-        { texto: 'Pra sempre, pra sempre​', italico: false },
-        { texto: 'Mas a Bíblia não passará!​', italico: false },
+        { texto: 'Alguns até queimaram', italico: false },
+        { texto: 'Ao tentarem encobrir,', italico: false },
+        { texto: 'A mensagem que nos deu o Criador.', italico: false },
+        { texto: 'Porém, milhões já creram,', italico: false },
+        { texto: 'Outros mais virão a crer', italico: false },
+        { texto: 'E o propósito de Deus triunfará.', italico: false },
+      ],
+      [
+        { texto: 'De pé está e ficará;', italico: true },
+        { texto: 'Cada palavra que escrita está.', italico: true },
+        { texto: 'Mesmo que os homens', italico: true },
+        { texto: 'desistam de crer,', italico: true },
+        { texto: 'Terra e céus hão de passar', italico: true },
+        { texto: 'Mas a Bíblia não passará.', italico: true },
+      ],
+      [
+        { texto: 'E os homens tão confusos ', italico: false },
+        { texto: 'Hoje buscam uma luz', italico: false },
+        { texto: 'Que somente a verdade nos conduz,', italico: false },
+        { texto: 'E existe uma esperança', italico: false },
+        { texto: 'Todos podem encontrar', italico: false },
+        { texto: 'Vida eterna nas palavras de Jesus.', italico: false },
+      ],
+      [
+        { texto: 'De pé está e ficará;', italico: true },
+        { texto: 'Cada palavra que escrita está.', italico: true },
+        { texto: 'Mesmo que os homens', italico: true },
+        { texto: 'desistam de crer,', italico: true },
+        { texto: 'Terra e céus hão de passar', italico: true },
+        { texto: 'Mas a Bíblia não passará.', italico: true },
+        { texto: '(2x)', italico: true },
+      ],
+      [
+        { texto: 'Pra sempre, pra sempre', italico: false },
+        { texto: 'Mas a Bíblia não passará!', italico: false },
       ],
     ],
   },
@@ -4387,90 +4544,91 @@ export const hymnsData: Hymn[] = [
     id: 130,
     numero: 130,
     titulo: 'QUAL A MISSÃO DA IGREJA',
+    presentationOrder: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
     estrofes: [
       [
-        { texto: 'Qual a missão da igreja?​', italico: true },
+        { texto: 'Qual a missão da igreja?', italico: true },
         { texto: 'Temos que refletir', italico: true },
-        { texto: 'Pra não perdermos o alvo,​', italico: true },
-        { texto: 'continuar prosseguir​', italico: true },
+        { texto: 'Pra não perdermos o alvo,', italico: true },
+        { texto: 'continuar prosseguir', italico: true },
       ],
       [
-        { texto: 'Qual a missão da igreja?​', italico: true },
-        { texto: 'Temos que reencontrar​', italico: true },
-        { texto: 'Para que o mundo creia,​', italico: true },
-        { texto: 'que Cristo nos veio salvar​', italico: true },
+        { texto: 'Qual a missão da igreja?', italico: true },
+        { texto: 'Temos que reencontrar', italico: true },
+        { texto: 'Para que o mundo creia,', italico: true },
+        { texto: 'que Cristo nos veio salvar', italico: true },
       ],
       [
-        { texto: 'Primeiro eu digo​', italico: false },
+        { texto: 'Primeiro eu digo', italico: false },
         { texto: 'que o Pai nos criou pra adorar', italico: false },
-        { texto: 'Para louvor de Sua gloria,​', italico: false },
-        { texto: 'para O exaltar​', italico: false },
+        { texto: 'Para louvor de Sua gloria,', italico: false },
+        { texto: 'para O exaltar', italico: false },
       ],
       [
-        { texto: 'Cantando nas tribulações,​', italico: false },
+        { texto: 'Cantando nas tribulações,', italico: false },
         { texto: 'dando graças em meio a aflições', italico: false },
-        { texto: 'Escrevendo com a vida um hino,​', italico: false },
-        { texto: 'um hino agradável a Deus​', italico: false },
+        { texto: 'Escrevendo com a vida um hino,', italico: false },
+        { texto: 'um hino agradável a Deus', italico: false },
       ],
       [
-        { texto: 'Qual a missão da igreja?​', italico: true },
+        { texto: 'Qual a missão da igreja?', italico: true },
         { texto: 'Temos que refletir', italico: true },
-        { texto: 'Pra não perdermos o alvo,​', italico: true },
-        { texto: 'continuar prosseguir​', italico: true },
+        { texto: 'Pra não perdermos o alvo,', italico: true },
+        { texto: 'continuar prosseguir', italico: true },
       ],
       [
-        { texto: 'Qual a missão da igreja?​', italico: true },
-        { texto: 'Temos que reencontrar​', italico: true },
-        { texto: 'Para que o mundo creia,​', italico: true },
-        { texto: 'que Cristo nos veio salvar​', italico: true },
+        { texto: 'Qual a missão da igreja?', italico: true },
+        { texto: 'Temos que reencontrar', italico: true },
+        { texto: 'Para que o mundo creia,', italico: true },
+        { texto: 'que Cristo nos veio salvar', italico: true },
       ],
       [
-        { texto: 'O eterno propósito,​', italico: false },
+        { texto: 'O eterno propósito,', italico: false },
         { texto: 'vem nos trazer uma luz', italico: false },
-        { texto: 'Que mostra o que Deus planejou,​', italico: false },
-        { texto: 'sermos como Jesus​', italico: false },
+        { texto: 'Que mostra o que Deus planejou,', italico: false },
+        { texto: 'sermos como Jesus', italico: false },
       ],
       [
-        { texto: 'Vivendo para servir,​', italico: false },
+        { texto: 'Vivendo para servir,', italico: false },
         { texto: 'para amar, repartir', italico: false },
         { texto: 'Afim de que o mundo creia,', italico: false },
         { texto: 'creia no filho de Deus', italico: false },
       ],
       [
-        { texto: 'Qual a missão da igreja?​', italico: true },
+        { texto: 'Qual a missão da igreja?', italico: true },
         { texto: 'Temos que refletir', italico: true },
-        { texto: 'Pra não perdermos o alvo,​', italico: true },
-        { texto: 'continuar prosseguir​', italico: true },
+        { texto: 'Pra não perdermos o alvo,', italico: true },
+        { texto: 'continuar prosseguir', italico: true },
       ],
       [
-        { texto: 'Qual a missão da igreja?​', italico: true },
-        { texto: 'Temos que reencontrar​', italico: true },
-        { texto: 'Para que o mundo creia,​', italico: true },
-        { texto: 'que Cristo nos veio salvar​', italico: true },
+        { texto: 'Qual a missão da igreja?', italico: true },
+        { texto: 'Temos que reencontrar', italico: true },
+        { texto: 'Para que o mundo creia,', italico: true },
+        { texto: 'que Cristo nos veio salvar', italico: true },
       ],
       [
-        { texto: 'Pregar o evangelho​', italico: false },
+        { texto: 'Pregar o evangelho', italico: false },
         { texto: 'em toda tribo e nação', italico: false },
-        { texto: 'Plantando a semente de vida​', italico: false },
+        { texto: 'Plantando a semente de vida', italico: false },
         { texto: 'em cada coração', italico: false },
       ],
       [
         { texto: 'Quem crê, salvo será', italico: false },
         { texto: 'Quem crê, nova vida terá', italico: false },
-        { texto: 'Assim crescerá a família,​', italico: false },
-        { texto: 'família de Deus​', italico: false },
+        { texto: 'Assim crescerá a família,', italico: false },
+        { texto: 'família de Deus', italico: false },
       ],
       [
-        { texto: 'Qual a missão da igreja?​', italico: true },
+        { texto: 'Qual a missão da igreja?', italico: true },
         { texto: 'Temos que refletir', italico: true },
-        { texto: 'Pra não perdermos o alvo,​', italico: true },
-        { texto: 'continuar prosseguir​', italico: true },
+        { texto: 'Pra não perdermos o alvo,', italico: true },
+        { texto: 'continuar prosseguir', italico: true },
       ],
       [
-        { texto: 'Qual a missão da igreja?​', italico: true },
-        { texto: 'Temos que reencontrar​', italico: true },
-        { texto: 'Para que o mundo creia,​', italico: true },
-        { texto: 'que Cristo nos veio salvar​', italico: true },
+        { texto: 'Qual a missão da igreja?', italico: true },
+        { texto: 'Temos que reencontrar', italico: true },
+        { texto: 'Para que o mundo creia,', italico: true },
+        { texto: 'que Cristo nos veio salvar', italico: true },
       ],
     ],
   },
@@ -4478,58 +4636,59 @@ export const hymnsData: Hymn[] = [
     id: 131,
     numero: 131,
     titulo: 'MEDLEY 2026',
+    presentationOrder: [0, 1, 2, 3, 4, 5, 6, 7, 8],
     estrofes: [
       [
-        { texto: 'A Bíblia é a palavra de Deus​', italico: false },
-        { texto: 'O livro incomparável​', italico: false },
-        { texto: 'Só ela mostra o caminho do céu​', italico: false },
+        { texto: 'A Bíblia é a palavra de Deus', italico: false },
+        { texto: 'O livro incomparável', italico: false },
+        { texto: 'Só ela mostra o caminho do céu', italico: false },
         { texto: 'Que livro incomparável', italico: false },
       ],
       [
-        { texto: 'Eu amo a Bíblia, a palavra de Deus​', italico: false },
-        { texto: 'O livro incomparável​', italico: false },
+        { texto: 'Eu amo a Bíblia, a palavra de Deus', italico: false },
+        { texto: 'O livro incomparável', italico: false },
         { texto: 'Achei Jesus na Palavra de Deus', italico: false },
-        { texto: 'Que livro incomparável​', italico: false },
+        { texto: 'Que livro incomparável', italico: false },
       ],
       [
         { texto: 'Bíblia, meu livro,', italico: false },
-        { texto: 'meu livro companheiro​', italico: false },
+        { texto: 'meu livro companheiro', italico: false },
         { texto: 'Meu livro companheiro', italico: false },
-        { texto: 'A Palavra de Deus​', italico: false },
+        { texto: 'A Palavra de Deus', italico: false },
       ],
       [
         { texto: 'Ela me ensina,', italico: false },
-        { texto: 'me ensina a cada dia​', italico: false },
+        { texto: 'me ensina a cada dia', italico: false },
         { texto: 'Me ensina a cada dia', italico: false },
         { texto: 'A andar com Jesus', italico: false },
       ],
       [
         { texto: 'Ninguém deve se esquecer', italico: false },
-        { texto: 'do que Deus na Bíblia diz​', italico: false },
-        { texto: 'Mas ouvir e obedecer​', italico: false },
-        { texto: 'Para sempre ser feliz​', italico: false },
+        { texto: 'do que Deus na Bíblia diz', italico: false },
+        { texto: 'Mas ouvir e obedecer', italico: false },
+        { texto: 'Para sempre ser feliz', italico: false },
       ],
       [
         { texto: 'Eu na Bíblia creio!', italico: false },
-        { texto: 'Eu na Bíblia creio!​', italico: false },
+        { texto: 'Eu na Bíblia creio!', italico: false },
         { texto: 'Creio que de Deus é a revelação…', italico: false },
       ],
       [
-        { texto: 'Eu na Bíblia creio! ​', italico: false },
-        { texto: 'Eu na Bíblia creio!​', italico: false },
+        { texto: 'Eu na Bíblia creio! ', italico: false },
+        { texto: 'Eu na Bíblia creio!', italico: false },
         { texto: 'Creio que de Deus é a revelação…', italico: false },
       ],
       [
-        { texto: 'B-I-B-L-I-A​', italico: false },
-        { texto: 'É o Livro do meu Deus​', italico: false },
+        { texto: 'B-I-B-L-I-A', italico: false },
+        { texto: 'É o Livro do meu Deus', italico: false },
         { texto: 'Eu guardo no meu coração', italico: false },
-        { texto: 'B-I-B-L-I-A​', italico: false },
+        { texto: 'B-I-B-L-I-A', italico: false },
       ],
       [
-        { texto: 'B-I-B-L-I-A​', italico: false },
-        { texto: 'É o Livro do meu Deus​', italico: false },
+        { texto: 'B-I-B-L-I-A', italico: false },
+        { texto: 'É o Livro do meu Deus', italico: false },
         { texto: 'Eu guardo no meu coração', italico: false },
-        { texto: 'B-I-B-L-I-A​', italico: false },
+        { texto: 'B-I-B-L-I-A', italico: false },
         { texto: 'Bíblia!!!', italico: false },
       ],
     ],
